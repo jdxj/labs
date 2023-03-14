@@ -1,0 +1,5 @@
+-82tKazD7s6gCkiELKtO8DBECn3UpwlH	ca/private/req.csr
+bv9MH1_ugubbRl2j0T97tTnGTtkyHoou	ca/private/root-ca.key
+jSaBg02D2c0lhcddmzWJxKGhfurSkQ3C	ca/rabbit/key.pem
+AmQ4QrjjA80YQRh1m0gsP3Iu6fiAN5Io	ca/rabbit/pub.pem
+ops4l1XuGbc31-DWPX8ZV9yaKUSnayi4	ca/rabbit/req.csr
