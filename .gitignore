@@ -18,3 +18,5 @@
 
 ca/rabbit/**
 ca/private/**
+docker/jump/.env
+docker/jump/conf/**
