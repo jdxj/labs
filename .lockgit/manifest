@@ -10,3 +10,4 @@ MIt1St62k_ys1JNkI55naeGNZcVkX-rG	docker/jump/conf/02_dns.json
 mhaHYQ9EVsTCasdAUaQ9psJjPpGZMzni	docker/jump/conf/04_policy.json
 sl_IxTI8OGrokfYoh-n2eJvTM4fBsR0n	docker/jump/conf/05_inbounds_ws.json
 KaHKwBSitbyR1ygyCQULS5z9nwS9tSkz	docker/jump/conf/06_outbounds.json
+94EJs0zZQ-3wiKwsh4J-deOOmYWoy7_R	nginx/nginx.conf

@@ -20,3 +20,4 @@ ca/rabbit/**
 ca/private/**
 docker/jump/.env
 docker/jump/conf/**
+nginx/nginx.conf
