@@ -16,6 +16,5 @@
 
 .idea/
 
-ca/private/req.csr
-ca/private/root-ca.key
 ca/rabbit/**
+ca/private/**
