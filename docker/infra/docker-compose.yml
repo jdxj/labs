@@ -1,0 +1,54 @@
+version: "3.9"
+
+networks:
+  my_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: ${SUBNET}
+
+services:
+  my_mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASS}
+    restart: unless-stopped
+    networks:
+      my_net:
+        ipv4_address: ${MYSQL_IP}
+    volumes:
+      - type: bind
+        source: ${MYSQL_CONF_PATH}
+        target: /etc/mysql/conf.d
+        read_only: true
+  my_redis:
+    image: redis:7
+    command: [ redis-server, /usr/local/etc/redis/redis.conf ]
+    restart: unless-stopped
+    networks:
+      my_net:
+        ipv4_address: ${REDIS_IP}
+    volumes:
+      - type: bind
+        source: ${REDIS_CONF_PATH}
+        target: /usr/local/etc/redis
+        read_only: true
+  my_rabbitmq:
+    image: rabbitmq:3-management
+    restart: unless-stopped
+    networks:
+      my_net:
+        ipv4_address: ${RABBITMQ_IP}
+  my_postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASS}
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "$POSTGRES_USER"]
+      interval: 10s
+      start_period: 30s
+    restart: unless-stopped
+    networks:
+      my_net:
+        ipv4_address: ${POSTGRES_IP}

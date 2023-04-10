@@ -1,6 +1,6 @@
 version: "3.9"
 networks:
-  study-docker-compose_my_net:
+  infra_my_net:
     external: true
 services:
   jump:
@@ -8,14 +8,14 @@ services:
     command: [/jump/jump.out, -confdir, /jump/conf]
     restart: unless-stopped
     networks:
-      study-docker-compose_my_net:
-        ipv4_address: 172.18.0.24
+      infra_my_net:
+        ipv4_address: ${JUMP_IP}
     volumes:
       - type: bind
-        source: $CONF_PATH
+        source: ${CONF_PATH}
         target: /jump/conf
         read_only: true
       - type: bind
-        source: $LOGS_PATH
+        source: ${JUMP_LOGS_PATH}
         target: /jump/logs
         read_only: false

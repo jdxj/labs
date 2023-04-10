@@ -1,0 +1,13 @@
+services:
+  my_mysql:
+    ports:
+      - 3306:3306
+  my_redis:
+    ports:
+      - 6379:6379
+  my_rabbitmq:
+    ports:
+      - 15672:15672
+  my_postgres:
+    ports:
+      - 5432:5432

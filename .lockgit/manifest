@@ -4,7 +4,8 @@ jSaBg02D2c0lhcddmzWJxKGhfurSkQ3C	ca/rabbit/key.pem
 Lsz_sEr7rHDxRlPaboU2B1uGpzgzeq8Z	ca/rabbit/pub.p12
 AmQ4QrjjA80YQRh1m0gsP3Iu6fiAN5Io	ca/rabbit/pub.pem
 ops4l1XuGbc31-DWPX8ZV9yaKUSnayi4	ca/rabbit/req.csr
-bzMgfEiigjQ3cThv0Pw4G1e5OWbdQlww	docker/jump/.env
+lxr8b-4nwBk8S5UoMRjnJSMwRhNVNz51	docker/infra/.env
+ncuDZBidf_XRDN_qRTHnzgHePzZKBPZl	docker/jump/.env
 Pht1Ho6N8IgGjHjcnw3lCNS_BWDBKHLo	docker/jump/conf/00_log.json
 MIt1St62k_ys1JNkI55naeGNZcVkX-rG	docker/jump/conf/02_dns.json
 k1Owbn-FpDsBZGNAJDAdn-pPkS5uIjLP	docker/jump/conf/03_routing.json
