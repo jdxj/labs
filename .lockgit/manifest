@@ -10,7 +10,7 @@ ncuDZBidf_XRDN_qRTHnzgHePzZKBPZl	docker/jump/.env
 Pht1Ho6N8IgGjHjcnw3lCNS_BWDBKHLo	docker/jump/conf/00_log.json
 MIt1St62k_ys1JNkI55naeGNZcVkX-rG	docker/jump/conf/02_dns.json
 k1Owbn-FpDsBZGNAJDAdn-pPkS5uIjLP	docker/jump/conf/03_routing.json
-bcefcdBbQkcKlqWYIGoqM2abNM6Zwpc5	docker/jump/conf/04_policy.json
+IeHaXmhWET1vajNlWd5FgkdBNbprIq20	docker/jump/conf/04_policy.json
 cILNwdqgY0OBJXfyAnHkufx7Hjr3GQIA	docker/jump/conf/05_inbounds.json
 hjhK-yCMna1CgybuZLJj7gx66SDfBj72	docker/jump/conf/06_outbounds.json
 WEJ5LEdkwEkxytNkCpQPgptHPj8xMOwc	nginx/nginx.conf
