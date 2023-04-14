@@ -52,3 +52,31 @@ services:
     networks:
       my_net:
         ipv4_address: ${POSTGRES_IP}
+  my_jump:
+    image: jdxj/jump:0.1.0
+    command: [/jump/jump.out, -confdir, /jump/conf]
+    restart: unless-stopped
+    networks:
+      infra_my_net:
+        ipv4_address: ${JUMP_IP}
+    volumes:
+      - type: bind
+        source: ${JUMP_CONF_PATH}
+        target: /jump/conf
+        read_only: true
+      - type: bind
+        source: ${JUMP_LOGS_PATH}
+        target: /jump/logs
+        read_only: false
+  my_miniflux:
+    image: miniflux/miniflux:latest
+    environment:
+      - DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASS}@${POSTGRES_IP}:5432/miniflux?sslmode=disable
+      - RUN_MIGRATIONS=1
+      - CREATE_ADMIN=1
+      - ADMIN_USERNAME=${MINIFLUX_USER}
+      - ADMIN_PASSWORD=${MINIFLUX_PASS}
+    restart: unless-stopped
+    networks:
+      infra_my_net:
+        ipv4_address: ${MINIFLUX_IP}

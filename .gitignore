@@ -18,8 +18,6 @@
 
 ca/rabbit/**
 ca/private/**
-docker/jump/.env
-docker/jump/conf/**
 nginx/nginx.conf
 docker/infra/.env
-docker/feed/.env
+docker/infra/jump/conf/**
