@@ -57,7 +57,7 @@ services:
     command: [/jump/jump.out, -confdir, /jump/conf]
     restart: unless-stopped
     networks:
-      infra_my_net:
+      my_net:
         ipv4_address: ${JUMP_IP}
     volumes:
       - type: bind
@@ -78,5 +78,5 @@ services:
       - ADMIN_PASSWORD=${MINIFLUX_PASS}
     restart: unless-stopped
     networks:
-      infra_my_net:
+      my_net:
         ipv4_address: ${MINIFLUX_IP}
