@@ -4,11 +4,11 @@ jSaBg02D2c0lhcddmzWJxKGhfurSkQ3C	ca/rabbit/key.pem
 Lsz_sEr7rHDxRlPaboU2B1uGpzgzeq8Z	ca/rabbit/pub.p12
 AmQ4QrjjA80YQRh1m0gsP3Iu6fiAN5Io	ca/rabbit/pub.pem
 ops4l1XuGbc31-DWPX8ZV9yaKUSnayi4	ca/rabbit/req.csr
--ixhSD2byDA6ku1ACj_pgJ2V3NwA2bWA	docker/infra/.env
+nCJgJG4z6aavw5tr75TURB9M88s6GO87	docker/infra/.env
 Qggi8yFN9fuofHn0OFOCIGv2r8zGD8zN	docker/infra/jump/conf/00_log.json
 rfSFiPmDqTxwgGttDKPmgkPCHapVNpkz	docker/infra/jump/conf/02_dns.json
 uS9utSZYiJJcp0BSm5E1ynTQQwumZT-a	docker/infra/jump/conf/03_routing.json
 2rnFBVeMuArk6JDIN7-g5KIjukTxCRLG	docker/infra/jump/conf/04_policy.json
 ohJbJX5CLa32u3gf8os8RB45XGOiyHsA	docker/infra/jump/conf/05_inbounds.json
 4CCmF35wGfYFyFd-4nEpucfHI1H5u5E-	docker/infra/jump/conf/06_outbounds.json
-5_ASe57upyjN69YfmLIEwo13-NBhvBMj	docker/infra/nginx/conf.d/server.conf
+sHcdqj0Yl3-kGkhMLdWbe19s2mTlcqiu	docker/infra/nginx/conf.d/server.conf

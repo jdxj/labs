@@ -67,7 +67,7 @@ services:
         read_only: false
       - type: bind
         source: ${NGINX_LIVE_PATH}
-        target: /etc/nginx/live
+        target: /etc/letsencrypt
         read_only: true
       - type: bind
         source: ${NGINX_CONFIG}
