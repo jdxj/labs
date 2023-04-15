@@ -52,6 +52,30 @@ services:
     networks:
       my_net:
         ipv4_address: ${POSTGRES_IP}
+  my_nginx:
+    image: nginx:alpine-slim
+    restart: unless-stopped
+    networks:
+      my_net:
+        ipv4_address: ${NGINX_IP}
+    ports:
+      - "443:443"
+    volumes:
+      - type: bind
+        source: ${NGINX_LOGS_PATH}
+        target: /var/log/nginx
+        read_only: false
+      - type: bind
+        source: ${NGINX_LIVE_PATH}
+        target: /etc/nginx/live
+        read_only: true
+      - type: bind
+        source: ${NGINX_CONFIG}
+        target: /etc/nginx/nginx.conf
+        read_only: true
+      - type: bind
+        source: ${NGINX_CONF_D_PATH}
+        target: /etc/nginx/conf.d
   my_jump:
     image: jdxj/jump:0.1.0
     command: [/jump/jump.out, -confdir, /jump/conf]

@@ -19,6 +19,6 @@
 
 ca/rabbit/**
 ca/private/**
-nginx/nginx.conf
 docker/infra/.env
 docker/infra/jump/conf/**
+docker/infra/nginx/conf.d/server.conf
