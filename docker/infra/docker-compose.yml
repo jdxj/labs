@@ -76,6 +76,7 @@ services:
       - type: bind
         source: ${NGINX_CONF_D_PATH}
         target: /etc/nginx/conf.d
+        read_only: true
   my_jump:
     image: jdxj/jump:0.1.0
     command: [/jump/jump.out, -confdir, /jump/conf]
