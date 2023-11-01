@@ -11,4 +11,6 @@ uS9utSZYiJJcp0BSm5E1ynTQQwumZT-a	docker/infra/jump/conf/03_routing.json
 2rnFBVeMuArk6JDIN7-g5KIjukTxCRLG	docker/infra/jump/conf/04_policy.json
 ohJbJX5CLa32u3gf8os8RB45XGOiyHsA	docker/infra/jump/conf/05_inbounds.json
 4CCmF35wGfYFyFd-4nEpucfHI1H5u5E-	docker/infra/jump/conf/06_outbounds.json
-sHcdqj0Yl3-kGkhMLdWbe19s2mTlcqiu	docker/infra/nginx/conf.d/server.conf
+-qUN6KwR0qtp3LizDwnMRIUDTD1dZipr	docker/infra/nginx/conf.d/jump.conf
+0zASu1AaM_qL20_AqgIKMsgesJnigP9T	docker/infra/nginx/conf.d/miniflux.conf
+1U8upjzG_wGTDhR4kLHRHHfnby1LgOfF	docker/infra/nginx/conf.d/rabbit.conf
