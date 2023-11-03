@@ -108,3 +108,13 @@ services:
     networks:
       my_net:
         ipv4_address: ${MINIFLUX_IP}
+  my_memos:
+    image: ghcr.io/usememos/memos:latest
+    volumes:
+      - type: bind
+        source: ${MEMOS_CONF_PATH}
+        target: /var/opt/memos
+        read_only: false
+    networks:
+      my_net:
+        ipv4_address: ${MEMOS_IP}
