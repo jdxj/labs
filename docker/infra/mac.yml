@@ -8,6 +8,7 @@ services:
   my_rabbitmq:
     ports:
       - 15672:15672
+      - 5672:5672
   my_postgres:
     ports:
       - 5432:5432
