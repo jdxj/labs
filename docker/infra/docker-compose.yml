@@ -118,3 +118,19 @@ services:
     networks:
       my_net:
         ipv4_address: ${MEMOS_IP}
+  my_shirley:
+    image: jdxj/shirley:a81c00e3
+    command: [/app/main]
+    restart: unless-stopped
+    networks:
+      my_net:
+        ipv4_address: ${SHIRLEY_IP}
+    volumes:
+      - type: bind
+        source: ${SHIRLEY_CONFIG_PATH}
+        target: /app/config
+        read_only: true
+      - type: bind
+        source: ${SHIRLEY_LOG_PATH}
+        target: /app/log
+        read_only: false

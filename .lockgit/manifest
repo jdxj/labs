@@ -4,7 +4,7 @@ jSaBg02D2c0lhcddmzWJxKGhfurSkQ3C	ca/rabbit/key.pem
 Lsz_sEr7rHDxRlPaboU2B1uGpzgzeq8Z	ca/rabbit/pub.p12
 AmQ4QrjjA80YQRh1m0gsP3Iu6fiAN5Io	ca/rabbit/pub.pem
 ops4l1XuGbc31-DWPX8ZV9yaKUSnayi4	ca/rabbit/req.csr
-hlPZBsO_lL4xN4sKNOu7D1wlteEaWCsO	docker/infra/.env
+_Nyh7iqyQhcy9Cco2w-G6pAHDtdwO6Ol	docker/infra/.env
 Qggi8yFN9fuofHn0OFOCIGv2r8zGD8zN	docker/infra/jump/conf/00_log.json
 rfSFiPmDqTxwgGttDKPmgkPCHapVNpkz	docker/infra/jump/conf/02_dns.json
 uS9utSZYiJJcp0BSm5E1ynTQQwumZT-a	docker/infra/jump/conf/03_routing.json
@@ -15,6 +15,8 @@ ohJbJX5CLa32u3gf8os8RB45XGOiyHsA	docker/infra/jump/conf/05_inbounds.json
 0zASu1AaM_qL20_AqgIKMsgesJnigP9T	docker/infra/nginx/conf.d/miniflux.conf
 6AmpYly6vR_TLcRwn1oRThks-Yvr-5gX	docker/infra/nginx/conf.d/note.conf
 1U8upjzG_wGTDhR4kLHRHHfnby1LgOfF	docker/infra/nginx/conf.d/rabbit.conf
+s6DsZffnz7oOHCI0jnLmqNvzbJcnXFEx	docker/infra/nginx/conf.d/shirley.conf
+KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 zBtofELLkUUC5-ubqKSsmD_kkP05x2Og	docker/infra/xray.yml
 NBCWyCrN45uu0z0EbewJEVAiy58D4lg1	docker/infra/xray/Dockerfile
 oklySP9BxHkOk44310R54-NXlomvp-C-	docker/infra/xray/conf/config.json

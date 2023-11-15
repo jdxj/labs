@@ -27,3 +27,5 @@ docker/infra/nginx/conf.d/rabbit.conf
 docker/infra/nginx/conf.d/note.conf
 docker/infra/xray/**
 docker/infra/xray.yml
+docker/infra/nginx/conf.d/shirley.conf
+docker/infra/shirley/config/config.yaml
