@@ -25,3 +25,5 @@ docker/infra/nginx/conf.d/jump.conf
 docker/infra/nginx/conf.d/miniflux.conf
 docker/infra/nginx/conf.d/rabbit.conf
 docker/infra/nginx/conf.d/note.conf
+docker/infra/xray/**
+docker/infra/xray.yml
