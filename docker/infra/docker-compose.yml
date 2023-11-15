@@ -119,7 +119,7 @@ services:
       my_net:
         ipv4_address: ${MEMOS_IP}
   my_shirley:
-    image: jdxj/shirley:a81c00e3
+    image: jdxj/shirley:467eb09f
     command: [/app/main]
     restart: unless-stopped
     networks:
