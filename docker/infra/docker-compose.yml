@@ -98,6 +98,9 @@ services:
         read_only: false
   my_miniflux:
     image: miniflux/miniflux:latest
+    depends_on:
+      my_postgres:
+        condition: service_healthy
     environment:
       - DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASS}@${POSTGRES_IP}:5432/miniflux?sslmode=disable
       - RUN_MIGRATIONS=1
