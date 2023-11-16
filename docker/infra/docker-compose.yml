@@ -55,6 +55,11 @@ services:
     networks:
       my_net:
         ipv4_address: ${POSTGRES_IP}
+    volumes:
+      - type: bind
+        source: ${POSTGRES_DATA}
+        target: /var/lib/postgresql/data
+        read_only: false
   my_nginx:
     image: nginx:alpine-slim
     restart: unless-stopped
