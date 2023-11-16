@@ -17,6 +17,9 @@
 .idea/
 *.log
 
+docker/infra/postgres/data
+
+# lockgit
 ca/rabbit/**
 ca/private/**
 docker/infra/.env
