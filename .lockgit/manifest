@@ -11,11 +11,11 @@ uS9utSZYiJJcp0BSm5E1ynTQQwumZT-a	docker/infra/jump/conf/03_routing.json
 2rnFBVeMuArk6JDIN7-g5KIjukTxCRLG	docker/infra/jump/conf/04_policy.json
 ohJbJX5CLa32u3gf8os8RB45XGOiyHsA	docker/infra/jump/conf/05_inbounds.json
 4CCmF35wGfYFyFd-4nEpucfHI1H5u5E-	docker/infra/jump/conf/06_outbounds.json
--qUN6KwR0qtp3LizDwnMRIUDTD1dZipr	docker/infra/nginx/conf.d/jump.conf
-0zASu1AaM_qL20_AqgIKMsgesJnigP9T	docker/infra/nginx/conf.d/miniflux.conf
-6AmpYly6vR_TLcRwn1oRThks-Yvr-5gX	docker/infra/nginx/conf.d/note.conf
-1U8upjzG_wGTDhR4kLHRHHfnby1LgOfF	docker/infra/nginx/conf.d/rabbit.conf
-s6DsZffnz7oOHCI0jnLmqNvzbJcnXFEx	docker/infra/nginx/conf.d/shirley.conf
+Kje6ldO32QgaDIIDSuYG9ZMpWv_M-1dl	docker/infra/nginx/conf.d/jump.conf
+P65xCPj38CZO8rmijSudxLLy6JDJDbSL	docker/infra/nginx/conf.d/miniflux.conf
+iixaXlLq2R1oNfzAnEbE8dI8e9GyZADT	docker/infra/nginx/conf.d/note.conf
+AdtMjr5Mqw8TnrhnAyPmLUutH-1B4Zrt	docker/infra/nginx/conf.d/rabbit.conf
+CFM0-pcP5ZGVKhO0IQekd65-19nZ-b9x	docker/infra/nginx/conf.d/shirley.conf
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 zBtofELLkUUC5-ubqKSsmD_kkP05x2Og	docker/infra/xray.yml
 NBCWyCrN45uu0z0EbewJEVAiy58D4lg1	docker/infra/xray/Dockerfile
