@@ -19,6 +19,6 @@ CFM0-pcP5ZGVKhO0IQekd65-19nZ-b9x	docker/infra/nginx/conf.d/shirley.conf
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 zBtofELLkUUC5-ubqKSsmD_kkP05x2Og	docker/infra/xray.yml
 NBCWyCrN45uu0z0EbewJEVAiy58D4lg1	docker/infra/xray/Dockerfile
-u5c6UbjcmfGwhX3bWWFW4pyWsJA8tbgw	docker/infra/xray/conf/config.json
+isvqW4Euc5eKzw0LW7RyLwlxarZoRpyk	docker/infra/xray/conf/config.json
 fm3dtVquviwYJuHFdi00p8wHwAL9kiAr	docker/infra/xray/conf/pk.txt
 au62pWE4wMS4UBFf_t6_JNKzqePWDB_c	docker/infra/xray/log/.keep
