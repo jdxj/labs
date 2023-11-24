@@ -4,10 +4,10 @@ jSaBg02D2c0lhcddmzWJxKGhfurSkQ3C	ca/rabbit/key.pem
 Lsz_sEr7rHDxRlPaboU2B1uGpzgzeq8Z	ca/rabbit/pub.p12
 AmQ4QrjjA80YQRh1m0gsP3Iu6fiAN5Io	ca/rabbit/pub.pem
 ops4l1XuGbc31-DWPX8ZV9yaKUSnayi4	ca/rabbit/req.csr
-Xc1zxUj4DxhzATEC_pYuuy8fAsSCtfOo	docker/infra/.env
+dMFxdHP5810mOxfbxGv8VKvpzMldegmL	docker/infra/.env
 3MC2bDPIua5A6yLxnLR1N9wk-Hfs4sup	docker/infra/nginx/conf.d/miniflux.conf
 _avFq4VTkCCxwvzNKTyeS21vwWIuXyK4	docker/infra/nginx/conf.d/note.conf
-ewcXfF_rHLvv2haJ8SVXdekUqL8wgYWe	docker/infra/nginx/conf.d/rabbit.conf
+zQcO3rwxASxPYznSV1lxUOZI0t6gm7dP	docker/infra/nginx/conf.d/rabbitmq.conf
 P3mPvSvQJEeUuMeO83FQM-1Pf1aVvyFn	docker/infra/nginx/conf.d/shirley.conf
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 6-LY9QGsG3J7ynlqnKSwubAOgWosptVN	docker/infra/xray.yml
