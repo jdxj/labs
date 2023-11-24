@@ -8,6 +8,7 @@ server {
 
     ssl_certificate /etc/nginx/live/domain/fullchain.pem;
     ssl_certificate_key /etc/nginx/live/domain/privkey.pem;
+    ssl_early_data off;
 
     location / {
         proxy_redirect off;
