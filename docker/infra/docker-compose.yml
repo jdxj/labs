@@ -66,6 +66,8 @@ services:
     networks:
       my_net:
         ipv4_address: ${NGINX_IP}
+    sysctls:
+      - net.ipv4.tcp_fastopen=3
     ports:
       - "443:443"
     volumes:
