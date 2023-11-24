@@ -26,8 +26,6 @@ docker/infra/memos/memos_prod.*
 ca/rabbit/**
 ca/private/**
 docker/infra/.env
-docker/infra/jump/conf/**
-docker/infra/nginx/conf.d/jump.conf
 docker/infra/nginx/conf.d/miniflux.conf
 docker/infra/nginx/conf.d/rabbit.conf
 docker/infra/nginx/conf.d/note.conf

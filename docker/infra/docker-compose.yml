@@ -87,22 +87,6 @@ services:
         source: ${NGINX_CONF_D_PATH}
         target: /etc/nginx/conf.d
         read_only: true
-  my_jump:
-    image: jdxj/jump:0.1.0
-    command: [/jump/jump.out, -confdir, /jump/conf]
-    restart: unless-stopped
-    networks:
-      my_net:
-        ipv4_address: ${JUMP_IP}
-    volumes:
-      - type: bind
-        source: ${JUMP_CONF_PATH}
-        target: /jump/conf
-        read_only: true
-      - type: bind
-        source: ${JUMP_LOGS_PATH}
-        target: /jump/logs
-        read_only: false
   my_miniflux:
     image: miniflux/miniflux:latest
     depends_on:
