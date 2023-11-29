@@ -11,7 +11,8 @@ services:
   my_mysql:
     image: mysql:8
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_PASS}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_PASS}
+      - TZ=Asia/Shanghai
     restart: unless-stopped
     networks:
       my_net:
@@ -47,6 +48,7 @@ services:
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASS}
+      - TZ=Asia/Shanghai
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "$POSTGRES_USER"]
       interval: 10s
@@ -63,6 +65,8 @@ services:
   my_nginx:
     image: nginx:alpine-slim
     restart: unless-stopped
+    environment:
+      - TZ=Asia/Shanghai
     networks:
       my_net:
         ipv4_address: ${NGINX_IP}
