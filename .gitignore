@@ -28,8 +28,9 @@ ca/private/**
 docker/infra/.env
 docker/infra/nginx/conf.d/miniflux.conf
 docker/infra/nginx/conf.d/note.conf
-docker/infra/xray/**
 docker/infra/xray.yml
 docker/infra/nginx/conf.d/shirley.conf
 docker/infra/shirley/config/config.yaml
 docker/infra/nginx/conf.d/rabbitmq.conf
+docker/infra/xray/conf/**
+docker/infra/xray/Dockerfile
