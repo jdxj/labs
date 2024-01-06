@@ -16,11 +16,13 @@
 
 .idea/
 *.log
+!.keep
 
 docker/infra/postgres/data
 docker/infra/redis/aof
 docker/infra/memos/.thumbnail_cache/
 docker/infra/memos/memos_prod.*
+docker/infra/wordpress
 
 # lockgit
 ca/rabbit/**
