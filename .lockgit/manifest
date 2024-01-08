@@ -6,7 +6,7 @@ AmQ4QrjjA80YQRh1m0gsP3Iu6fiAN5Io	ca/rabbit/pub.pem
 ops4l1XuGbc31-DWPX8ZV9yaKUSnayi4	ca/rabbit/req.csr
 ao_Fbyz2DEkasRUr3HPQmAJpIyEty2rH	config/xray/client/00_log.json
 tYmdmtI9hO7y9hzEpn6IU6uQBcUOA1-g	config/xray/client/02_dns.json
-pMXJHTegzh_m0tmI10302llg-EYBjJK4	config/xray/client/03_routing.json
+7bGoxYL-bAc4xjmf4y8_OXBYxG_ewSPn	config/xray/client/03_routing.json
 O2AXp5rAvhQMub_eRyIgGJ8kzKLd0l7u	config/xray/client/05_inbounds.json
 gclimHa7Wp6ri121g2ep1lSwTnG7EB7N	config/xray/client/06_outbounds.json
 5fza6aW6-YGzFSW3CmQ8vTvFfggiZ2zz	config/xray/client/12_observatory.json
@@ -19,5 +19,5 @@ P3mPvSvQJEeUuMeO83FQM-1Pf1aVvyFn	docker/infra/nginx/conf.d/shirley.conf
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 h7RgIbV0y6PONhy755uYVzkk3aWe3LIP	docker/infra/xray.yml
 Jk4sPEyvfch7YAuCXFe1JT_3EEmyIG-_	docker/infra/xray/Dockerfile
-oqR1yDIuA09HX-owSvtFWzYmezk807HN	docker/infra/xray/conf/config.json
+stLYOED0ZcpmsEA9j06CdGBaP0JOr748	docker/infra/xray/conf/config.json
 lnmQ_O-ES9FxCRvbbvRmYvNKfj6mCH6s	docker/infra/xray/conf/pk.txt
