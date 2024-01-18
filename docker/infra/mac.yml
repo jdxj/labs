@@ -12,3 +12,6 @@ services:
   my_postgres:
     ports:
       - 5432:5432
+  my_stackedit:
+    ports:
+      - 8080:8080

@@ -142,3 +142,9 @@ services:
         source: ${WORDPRESS_HTML}
         target: /var/www/html
         read_only: false
+  my_stackedit:
+    image: benweet/stackedit:latest
+    restart: unless-stopped
+    networks:
+      my_net:
+        ipv4_address: ${STACKEDIT_IP}
