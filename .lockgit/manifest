@@ -4,6 +4,8 @@ jSaBg02D2c0lhcddmzWJxKGhfurSkQ3C	ca/rabbit/key.pem
 Lsz_sEr7rHDxRlPaboU2B1uGpzgzeq8Z	ca/rabbit/pub.p12
 AmQ4QrjjA80YQRh1m0gsP3Iu6fiAN5Io	ca/rabbit/pub.pem
 ops4l1XuGbc31-DWPX8ZV9yaKUSnayi4	ca/rabbit/req.csr
+vgk_R7GpfrWc0n9kR06RNyZyvbPGkI8u	config/ssh/fuya/id_ed25519
+bWmyyO9c6Oc1GyNBCrsf1_18p11S59sk	config/ssh/fuya/id_ed25519.pub
 ao_Fbyz2DEkasRUr3HPQmAJpIyEty2rH	config/xray/client/00_log.json
 tYmdmtI9hO7y9hzEpn6IU6uQBcUOA1-g	config/xray/client/02_dns.json
 7bGoxYL-bAc4xjmf4y8_OXBYxG_ewSPn	config/xray/client/03_routing.json
