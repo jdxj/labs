@@ -37,7 +37,7 @@ restart.xray: open.config
 # nginx start ---
 
 .PHONY: restart.nginx
-restart.nginx: open.config
+restart.nginx:
 	cd docker/infra && \
 		docker compose -f docker-compose.yml -f xray.yml restart my_nginx
 
