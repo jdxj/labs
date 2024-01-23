@@ -23,7 +23,7 @@ build.xray:
 		docker buildx build --no-cache -t jdxj/xray:latest .
 
 .PHONY: up.xray
-up.xray: down.xray rm.image.xray open.config build.xray
+up.xray: open.config down.xray rm.image.xray build.xray
 	cd docker/infra && \
 		docker compose -f docker-compose.yml -f xray.yml up -d my_xray
 
