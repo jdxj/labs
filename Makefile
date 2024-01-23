@@ -26,13 +26,11 @@ build.xray:
 up.xray: down.xray rm.image.xray open.config build.xray
 	cd docker/infra && \
 		docker compose -f docker-compose.yml -f xray.yml up -d my_xray
-	lockgit close
 
 .PHONY: restart.xray
 restart.xray: open.config
 	cd docker/infra && \
 		docker compose -f docker-compose.yml -f xray.yml restart my_xray
-	lockgit close
 
 # xray end
 
@@ -42,6 +40,5 @@ restart.xray: open.config
 restart.nginx: open.config
 	cd docker/infra && \
 		docker compose -f docker-compose.yml -f xray.yml restart my_nginx
-	lockgit close
 
 # nginx end
