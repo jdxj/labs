@@ -18,18 +18,30 @@ rm.image.xray:
 	docker image rm -f jdxj/xray:latest
 
 .PHONY: build.xray
-build.xray: open.config
+build.xray:
 	cd docker/infra/xray && \
 		docker buildx build --no-cache -t jdxj/xray:latest .
 
 .PHONY: up.xray
-up.xray: down.xray rm.image.xray build.xray
+up.xray: down.xray rm.image.xray open.config build.xray
 	cd docker/infra && \
 		docker compose -f docker-compose.yml -f xray.yml up -d my_xray
+	lockgit close
 
 .PHONY: restart.xray
-restart.xray:
+restart.xray: open.config
 	cd docker/infra && \
 		docker compose -f docker-compose.yml -f xray.yml restart my_xray
+	lockgit close
 
 # xray end
+
+# nginx start ---
+
+.PHONY: restart.nginx
+restart.nginx: open.config
+	cd docker/infra && \
+		docker compose -f docker-compose.yml -f xray.yml restart my_nginx
+	lockgit close
+
+# nginx end
