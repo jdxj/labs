@@ -38,3 +38,4 @@ docker/infra/xray/conf/**
 docker/infra/xray/Dockerfile
 config/xray/**
 config/ssh/**
+docker/infra/nginx/conf.d/204.conf

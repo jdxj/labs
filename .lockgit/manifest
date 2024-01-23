@@ -14,6 +14,7 @@ gclimHa7Wp6ri121g2ep1lSwTnG7EB7N	config/xray/client/06_outbounds.json
 JjLOWzvAYM2yZwYumMXX4u_IH2JNu1XT	config/xray/client/12_observatory.json
 TPlamNvdNPejhXULCeg4xXye-_0qxwlS	config/xray/homebrew.mxcl.xray.plist
 dfTQgZsesTk3T4m_tHiOSH99vhwsVPiv	docker/infra/.env
+zStWVipgluFTQnthnmqK8r_g1OJ7LfOM	docker/infra/nginx/conf.d/204.conf
 3MC2bDPIua5A6yLxnLR1N9wk-Hfs4sup	docker/infra/nginx/conf.d/miniflux.conf
 _avFq4VTkCCxwvzNKTyeS21vwWIuXyK4	docker/infra/nginx/conf.d/note.conf
 zQcO3rwxASxPYznSV1lxUOZI0t6gm7dP	docker/infra/nginx/conf.d/rabbitmq.conf
