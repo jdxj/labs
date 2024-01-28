@@ -1,44 +1,30 @@
-# lockgit start ---
+DOCKER := cd docker/infra && docker compose -f docker-compose.yml -f xray.yml
 
 .PHONY: open.config
 open.config:
 	lockgit open -f
 
-# lockgit end
+.PHONY: close.config
+close.config:
+	lockgit close
 
-# xray start ---
+.PHONY: down.%
+down.%:
+	$(DOCKER) down my_$*
 
-.PHONY: down.xray
-down.xray:
-	cd docker/infra && \
-		docker compose -f docker-compose.yml -f xray.yml down my_xray
+.PHONY: rm.image.%
+rm.image.%:
+	docker image rm -f jdxj/$*:latest
 
-.PHONY: rm.image.xray
-rm.image.xray:
-	docker image rm -f jdxj/xray:latest
+.PHONY: build.%
+build.%:
+	cd docker/infra/$* && \
+		docker buildx build --no-cache -t jdxj/$*:latest .
 
-.PHONY: build.xray
-build.xray:
-	cd docker/infra/xray && \
-		docker buildx build --no-cache -t jdxj/xray:latest .
+.PHONY: up.%
+up.%: open.config down.% rm.image.% build.%
+	$(DOCKER) up -d my_$*
 
-.PHONY: up.xray
-up.xray: open.config down.xray rm.image.xray build.xray
-	cd docker/infra && \
-		docker compose -f docker-compose.yml -f xray.yml up -d my_xray
-
-.PHONY: restart.xray
-restart.xray: open.config
-	cd docker/infra && \
-		docker compose -f docker-compose.yml -f xray.yml restart my_xray
-
-# xray end
-
-# nginx start ---
-
-.PHONY: restart.nginx
-restart.nginx:
-	cd docker/infra && \
-		docker compose -f docker-compose.yml -f xray.yml restart my_nginx
-
-# nginx end
+.PHONY: restart.%
+restart.%: open.config
+	$(DOCKER) restart my_$*
