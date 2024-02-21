@@ -15,10 +15,10 @@ JjLOWzvAYM2yZwYumMXX4u_IH2JNu1XT	config/xray/client/12_observatory.json
 TPlamNvdNPejhXULCeg4xXye-_0qxwlS	config/xray/homebrew.mxcl.xray.plist
 dfTQgZsesTk3T4m_tHiOSH99vhwsVPiv	docker/infra/.env
 gjDZ-NuarVwXMT-iAbmLmSPaZAS8aGTQ	docker/infra/nginx/conf.d/204.conf
-3MC2bDPIua5A6yLxnLR1N9wk-Hfs4sup	docker/infra/nginx/conf.d/miniflux.conf
-_avFq4VTkCCxwvzNKTyeS21vwWIuXyK4	docker/infra/nginx/conf.d/note.conf
-zQcO3rwxASxPYznSV1lxUOZI0t6gm7dP	docker/infra/nginx/conf.d/rabbitmq.conf
-P3mPvSvQJEeUuMeO83FQM-1Pf1aVvyFn	docker/infra/nginx/conf.d/shirley.conf
+5pi5PRLo_AZVIjxzA4CmesKcLpy1oAVu	docker/infra/nginx/conf.d/miniflux.conf
+nIzMyd7ph6kdo6D6oDXDpmOkbcGgdXcy	docker/infra/nginx/conf.d/note.conf
+oSREeyqVW_QAerJRHjuHWxktyFyoxIDd	docker/infra/nginx/conf.d/rabbitmq.conf
+-lt1u9jhgE5qi_NhN806Bfuqk1NULQpY	docker/infra/nginx/conf.d/shirley.conf
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 5Aviuajgzje2Bcy5MAbBxOY1kuityD0N	docker/infra/xray.yml
 dQ2YO9lVoYokBbD26CqTkrui4jEOQapv	docker/infra/xray/Dockerfile
