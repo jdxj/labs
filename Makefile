@@ -2,6 +2,7 @@ DOCKER := cd docker/infra && docker compose -f docker-compose.yml -f xray.yml
 
 .PHONY: open.config
 open.config:
+	git pull
 	lockgit open -f
 
 .PHONY: close.config
