@@ -8,10 +8,10 @@ vgk_R7GpfrWc0n9kR06RNyZyvbPGkI8u	config/ssh/fuya/id_ed25519
 bWmyyO9c6Oc1GyNBCrsf1_18p11S59sk	config/ssh/fuya/id_ed25519.pub
 ao_Fbyz2DEkasRUr3HPQmAJpIyEty2rH	config/xray/client/00_log.json
 qnkICtAgmk5-sUuZXLO4EZ9fZwtVKOnP	config/xray/client/02_dns.json
-f6tnOlCV6H3fJ2iMxb-hCEbZP3GPFwvl	config/xray/client/03_routing.json
+62lpUzTAJHBOh4mOUNgfMVOvXaveCDOm	config/xray/client/03_routing.json
 O2AXp5rAvhQMub_eRyIgGJ8kzKLd0l7u	config/xray/client/05_inbounds.json
-gclimHa7Wp6ri121g2ep1lSwTnG7EB7N	config/xray/client/06_outbounds.json
-JjLOWzvAYM2yZwYumMXX4u_IH2JNu1XT	config/xray/client/12_observatory.json
+A6gCAAaeHpWaKsVGzqhekpO_Ws8RVoqs	config/xray/client/06_outbounds.json
+Qtzzfx2Ez2vuhV4f540_vRDaPIXDWx52	config/xray/client/12_observatory.json
 TPlamNvdNPejhXULCeg4xXye-_0qxwlS	config/xray/homebrew.mxcl.xray.plist
 dfTQgZsesTk3T4m_tHiOSH99vhwsVPiv	docker/infra/.env
 gjDZ-NuarVwXMT-iAbmLmSPaZAS8aGTQ	docker/infra/nginx/conf.d/204.conf
