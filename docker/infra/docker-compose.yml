@@ -33,7 +33,7 @@ services:
       - type: bind
         source: ${REDIS_CONF_PATH}
         target: /usr/local/etc/redis
-        read_only: false
+        read_only: true
   my_rabbitmq:
     image: rabbitmq:3-management
     environment:
