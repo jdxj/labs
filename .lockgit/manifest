@@ -24,6 +24,6 @@ oSREeyqVW_QAerJRHjuHWxktyFyoxIDd	docker/infra/nginx/conf.d/rabbitmq.conf
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 5Aviuajgzje2Bcy5MAbBxOY1kuityD0N	docker/infra/xray.yml
 dQ2YO9lVoYokBbD26CqTkrui4jEOQapv	docker/infra/xray/Dockerfile
-aSZy6Bc6vmGTv1r2v4fjMl4srjasiHYN	docker/infra/xray/conf/config.json
+u05w9yQ_vMeJ8NVlAkCQrbhFhLfgSPon	docker/infra/xray/conf/config.json
 lnmQ_O-ES9FxCRvbbvRmYvNKfj6mCH6s	docker/infra/xray/conf/pk.txt
 Zlw6dHTJ32_nQlgOTSbKR0suwE_fRN_K	recovery/github-recovery-codes.txt
