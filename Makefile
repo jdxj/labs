@@ -1,4 +1,4 @@
-DOCKER := cd docker/infra && docker compose -f docker-compose.yml -f xray.yml
+DOCKER := cd docker/infra && docker compose -f docker-compose.yml -f xray.yml -f xray-forward.yml
 
 .PHONY: open.config
 open.config:
