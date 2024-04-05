@@ -8,6 +8,7 @@ vgk_R7GpfrWc0n9kR06RNyZyvbPGkI8u	config/ssh/fuya/id_ed25519
 bWmyyO9c6Oc1GyNBCrsf1_18p11S59sk	config/ssh/fuya/id_ed25519.pub
 AR6oNLzdlOjeW3gYWcZbtqwBzCtqn5nP	config/ssh/mbp/id_ed25519
 115_X8Zi63jeKe8oHwlxiNW5mo7Z4Bkm	config/ssh/mbp/id_ed25519.pub
+RUiTCsK7ZieCPZFDD-tKpOXaVCODflIN	config/sshd/env.conf
 ao_Fbyz2DEkasRUr3HPQmAJpIyEty2rH	config/xray/client/00_log.json
 qnkICtAgmk5-sUuZXLO4EZ9fZwtVKOnP	config/xray/client/02_dns.json
 62lpUzTAJHBOh4mOUNgfMVOvXaveCDOm	config/xray/client/03_routing.json
