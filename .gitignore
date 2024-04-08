@@ -44,3 +44,4 @@ docker/infra/xray-forward/conf/**
 docker/infra/xray-forward/Dockerfile
 docker/infra/xray-forward.yml
 config/sshd/env.conf
+resume/**
