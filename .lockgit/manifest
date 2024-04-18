@@ -15,7 +15,7 @@ ao_Fbyz2DEkasRUr3HPQmAJpIyEty2rH	config/xray/client/00_log.json
 qnkICtAgmk5-sUuZXLO4EZ9fZwtVKOnP	config/xray/client/02_dns.json
 62lpUzTAJHBOh4mOUNgfMVOvXaveCDOm	config/xray/client/03_routing.json
 O2AXp5rAvhQMub_eRyIgGJ8kzKLd0l7u	config/xray/client/05_inbounds.json
-A6gCAAaeHpWaKsVGzqhekpO_Ws8RVoqs	config/xray/client/06_outbounds.json
+_iOKhWRiE8y7s2y3mAnYDBa5glt10wBB	config/xray/client/06_outbounds.json
 Qtzzfx2Ez2vuhV4f540_vRDaPIXDWx52	config/xray/client/12_observatory.json
 TPlamNvdNPejhXULCeg4xXye-_0qxwlS	config/xray/homebrew.mxcl.xray.plist
 10ZPgHRCAxewxoACfOZq5o5BAsB1yu5I	docker/infra/.env
@@ -27,11 +27,11 @@ oSREeyqVW_QAerJRHjuHWxktyFyoxIDd	docker/infra/nginx/conf.d/rabbitmq.conf
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 qbXH5EoCsZdCf7JtlL1j1kxBsdC_-L_S	docker/infra/xray-forward.yml
 8051D9MAVW6UMVY1neb2PCbun4IJ_o4x	docker/infra/xray-forward/Dockerfile
-b6f8FNO3ENTd1XXgymvOC_ec2p62kZTW	docker/infra/xray-forward/conf/config.json
-d7NWmPBEkPlxlGfC0ElF0FtzphP2FrA1	docker/infra/xray-forward/conf/pk.txt
+H1ZRErh-zC3nIBVvdJAXFpXf_PAn0Cad	docker/infra/xray-forward/conf/config.json
+GSzaH74UzA8FkSQiAGkLU_sNpeot3HKh	docker/infra/xray-forward/conf/pk.txt
 5Aviuajgzje2Bcy5MAbBxOY1kuityD0N	docker/infra/xray.yml
 dQ2YO9lVoYokBbD26CqTkrui4jEOQapv	docker/infra/xray/Dockerfile
-NQ0YAKKJGHhw0qsNFONVDBYxCLqEG0gw	docker/infra/xray/conf/config.json
-lnmQ_O-ES9FxCRvbbvRmYvNKfj6mCH6s	docker/infra/xray/conf/pk.txt
+jdqTCRbNMFl05pp9ff1NEdKMo3ZzmJ7K	docker/infra/xray/conf/config.json
+TU4P32okbzueWj4Kk-qK1gzyKpDCQadJ	docker/infra/xray/conf/pk.txt
 Zlw6dHTJ32_nQlgOTSbKR0suwE_fRN_K	recovery/github-recovery-codes.txt
 TIi3A4BMkWXIX7jyrbmdFxUXFX3Rnfu_	resume/resume.json
