@@ -48,7 +48,7 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASS}
       - TZ=Asia/Shanghai
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "$POSTGRES_USER"]
+      test: [ "CMD", "pg_isready", "-U", "$POSTGRES_USER" ]
       interval: 10s
       start_period: 30s
     restart: unless-stopped
@@ -111,7 +111,7 @@ services:
         ipv4_address: ${MEMOS_IP}
   my_shirley:
     image: jdxj/shirley:467eb09f
-    command: [/app/main]
+    command: [ /app/main ]
     restart: unless-stopped
     networks:
       my_net:
@@ -146,3 +146,15 @@ services:
     networks:
       my_net:
         ipv4_address: ${STACKEDIT_IP}
+  my_sourceforge-dl:
+    image: jdxj/sourceforge-dl:0.1.0
+    restart: unless-stopped
+    command: [ /sourceforge-downloader/sourceforge-dl,--domain,${ SOURCEFORGE_DL_DOMAIN },--cron,${ SOURCEFORGE_DL_CRON }, ${ SOURCEFORGE_DL_RSS_URL }, ${ SOURCEFORGE_DL_USER_ID }, ${ SOURCEFORGE_DL_TOKEN } ]
+    volumes:
+      - type: bind
+        source: ${SOURCEFORGE_DL_ASSETS}
+        target: /sourceforge-downloader/assets
+        read_only: false
+    networks:
+      my_net:
+        ipv4_address: ${SOURCEFORGE_DL_IP}
