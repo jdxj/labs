@@ -149,7 +149,17 @@ services:
   my_sourceforge-dl:
     image: jdxj/sourceforge-dl:0.1.0
     restart: unless-stopped
-    command: [ /sourceforge-downloader/sourceforge-dl,--domain,${ SOURCEFORGE_DL_DOMAIN },--cron,${ SOURCEFORGE_DL_CRON }, ${ SOURCEFORGE_DL_RSS_URL }, ${ SOURCEFORGE_DL_USER_ID }, ${ SOURCEFORGE_DL_TOKEN } ]
+    environment:
+      - RUST_LOG=reqwest=trace,sourceforge_dl=debug
+    command:
+      - /sourceforge-downloader/sourceforge-dl
+      - --domain
+      - ${SOURCEFORGE_DL_DOMAIN}
+      - --cron
+      - ${SOURCEFORGE_DL_CRON}
+      - ${SOURCEFORGE_DL_RSS_URL}
+      - ${SOURCEFORGE_DL_USER_ID}
+      - ${SOURCEFORGE_DL_TOKEN}
     volumes:
       - type: bind
         source: ${SOURCEFORGE_DL_ASSETS}
