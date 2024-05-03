@@ -153,6 +153,8 @@ services:
       - RUST_LOG=reqwest=trace,sourceforge_dl=debug
     command:
       - /sourceforge-downloader/sourceforge-dl
+      - --save-dir
+      - /sourceforge-downloader/assets
       - --domain
       - ${SOURCEFORGE_DL_DOMAIN}
       - --cron
