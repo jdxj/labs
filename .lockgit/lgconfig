@@ -1,1 +1,1 @@
-{"Ver":1,"Id":"d7570782-a202-4ba5-4c85-4b8ff6b58160","Patterns":["ca/private/**","ca/rabbit/**","config/ssh/**","config/xray/**","docker/infra/xray-forward/conf/**","docker/infra/xray/conf/**","recovery/**","resume/**"]}
+{"Ver":1,"Id":"d7570782-a202-4ba5-4c85-4b8ff6b58160","Patterns":["ca/private/**","ca/rabbit/**","config/ssh/**","config/xray/**","docker/infra/hysteria/conf/**","docker/infra/xray-forward/conf/**","docker/infra/xray/conf/**","recovery/**","resume/**"]}
