@@ -18,7 +18,7 @@ O2AXp5rAvhQMub_eRyIgGJ8kzKLd0l7u	config/xray/client/05_inbounds.json
 _iOKhWRiE8y7s2y3mAnYDBa5glt10wBB	config/xray/client/06_outbounds.json
 Qtzzfx2Ez2vuhV4f540_vRDaPIXDWx52	config/xray/client/12_observatory.json
 TPlamNvdNPejhXULCeg4xXye-_0qxwlS	config/xray/homebrew.mxcl.xray.plist
-nMLRIDPyBMXUHsqhvRi2cylyO5WttiNI	docker/infra/.env
+_mImPvoWSm3oFzQCPcsYS0bhQpbtufHC	docker/infra/.env
 gjDZ-NuarVwXMT-iAbmLmSPaZAS8aGTQ	docker/infra/nginx/conf.d/204.conf
 5pi5PRLo_AZVIjxzA4CmesKcLpy1oAVu	docker/infra/nginx/conf.d/miniflux.conf
 nIzMyd7ph6kdo6D6oDXDpmOkbcGgdXcy	docker/infra/nginx/conf.d/note.conf

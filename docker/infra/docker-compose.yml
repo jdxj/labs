@@ -5,6 +5,10 @@ networks:
       config:
         - subnet: ${SUBNET}
 
+volumes:
+  nextcloud_aio_mastercontainer:
+    name: nextcloud_aio_mastercontainer
+
 services:
   my_mysql:
     image: mysql:8
@@ -170,3 +174,20 @@ services:
     networks:
       my_net:
         ipv4_address: ${SOURCEFORGE_DL_IP}
+  my_nextcloud:
+    image: nextcloud/all-in-one:latest
+    init: true
+    restart: unless-stopped
+    container_name: nextcloud-aio-mastercontainer
+    volumes:
+      - nextcloud_aio_mastercontainer:/mnt/docker-aio-config
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - APACHE_PORT=11000
+      - APACHE_IP_BINDING=0.0.0.0
+    networks:
+      my_net:
+        ipv4_address: ${NEXTCLOUD_IP}
+    ports:
+      - 8080:8080
+
