@@ -9,6 +9,7 @@ volumes:
   nextcloud_aio_mastercontainer:
     name: nextcloud_aio_mastercontainer
   acme:
+    name: acme
 
 services:
   my_mysql:
