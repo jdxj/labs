@@ -23,6 +23,7 @@ TPlamNvdNPejhXULCeg4xXye-_0qxwlS	config/xray/homebrew.mxcl.xray.plist
 Srg9BvML4lLfGQhFLEckw27F4---gtEY	docker/infra/.env
 Oqh291dUYEjFqvGJVXjyUq-u6Ydu7vRP	docker/infra/hysteria.yml
 0HX7TIG0xz4mSXmJyCNV6fEDg3TBLHiN	docker/infra/hysteria/conf/config.yaml
+mKzitReBn1DoAzGeV2d0KrSWkxcz7QqO	docker/infra/hysteria/conf/config_client.yaml
 gjDZ-NuarVwXMT-iAbmLmSPaZAS8aGTQ	docker/infra/nginx/conf.d/204.conf
 5pi5PRLo_AZVIjxzA4CmesKcLpy1oAVu	docker/infra/nginx/conf.d/miniflux.conf
 nIzMyd7ph6kdo6D6oDXDpmOkbcGgdXcy	docker/infra/nginx/conf.d/note.conf
