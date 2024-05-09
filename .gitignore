@@ -47,3 +47,4 @@ config/sshd/env.conf
 resume/**
 docker/infra/hysteria.yml
 docker/infra/hysteria/conf/**
+docker/infra/nginx/conf.d/htpasswd

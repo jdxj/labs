@@ -87,6 +87,10 @@ services:
         source: ${NGINX_CONF_D_PATH}
         target: /etc/nginx/conf.d
         read_only: true
+      - type: bind
+        source: ${NGINX_STATIC_PATH}
+        target: /etc/nginx/static
+        read_only: true
   my_miniflux:
     image: miniflux/miniflux:latest
     depends_on:
