@@ -17,6 +17,7 @@
 .idea/
 *.log
 !.keep
+*.session
 
 docker/infra/postgres/data
 docker/infra/redis/aof
