@@ -48,3 +48,4 @@ resume/**
 docker/infra/hysteria.yml
 docker/infra/hysteria/conf/**
 docker/infra/nginx/conf.d/htpasswd
+docker/infra/aria2/aria2.conf

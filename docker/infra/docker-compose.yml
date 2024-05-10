@@ -204,3 +204,14 @@ services:
     networks:
       my_net:
         ipv4_address: ${EUGENE_BOT_IP}
+  my_aria2:
+    image: jdxj/aria2:latest
+    restart: unless-stopped
+    networks:
+      my_net:
+        ipv4_address: ${ARIA2_IP}
+    volumes:
+      - type: bind
+        source: ${ARIA2_CONFIG_PATH}
+        target: /root/.aria2/aria2.conf
+        read_only: true
