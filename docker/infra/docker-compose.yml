@@ -200,6 +200,7 @@ services:
     environment:
       - RUST_LOG=debug
       - EUGENE_BOT_DOMAIN=${EUGENE_BOT_DOMAIN}
+      - TELOXIDE_TOKEN=${EUGENE_BOT_TOKEN}
     networks:
       my_net:
         ipv4_address: ${EUGENE_BOT_IP}
