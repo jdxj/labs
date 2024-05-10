@@ -215,3 +215,7 @@ services:
         source: ${ARIA2_CONFIG_PATH}
         target: /root/.aria2/aria2.conf
         read_only: true
+      - type: bind
+        source: ${NGINX_STATIC_PATH}
+        target: /root/Download
+        read_only: false
