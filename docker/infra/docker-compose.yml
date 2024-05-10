@@ -194,3 +194,12 @@ services:
         ipv4_address: ${NEXTCLOUD_IP}
     ports:
       - 8080:8080
+  my_eugene-bot:
+    image: jdxj/eugene-bot:0.1.0
+    restart: unless-stopped
+    environment:
+      - RUST_LOG=debug
+      - EUGENE_BOT_DOMAIN=${EUGENE_BOT_DOMAIN}
+    networks:
+      my_net:
+        ipv4_address: ${EUGENE_BOT_IP}
