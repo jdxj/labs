@@ -201,6 +201,9 @@ services:
       - RUST_LOG=debug
       - EUGENE_BOT_DOMAIN=${EUGENE_BOT_DOMAIN}
       - TELOXIDE_TOKEN=${EUGENE_BOT_TOKEN}
+      - ARIA2_SECRET=${EUGENE_BOT_ARIA2_SECRET}
+      - ARIA2_WS_ADDR=${EUGENE_BOT_ARIA2_WS_ADDR}
+      - CHAT_ID=${EUGENE_BOT_CHAT_ID}
     networks:
       my_net:
         ipv4_address: ${EUGENE_BOT_IP}
