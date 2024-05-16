@@ -233,3 +233,31 @@ services:
     restart: unless-stopped
     volumes:
       - syncthing:/var/syncthing
+  my_qbittorrent-nox:
+    environment:
+      - QBT_EULA=${QBT_EULA}
+      - QBT_VERSION=${QBT_VERSION}
+      - QBT_WEBUI_PORT=${QBT_WEBUI_PORT}
+      - TZ=Asia/Shanghai
+    image: qbittorrentofficial/qbittorrent-nox:${QBT_VERSION}
+    ports:
+      - 6881:6881/tcp
+      - 6881:6881/udp
+    read_only: true
+    stop_grace_period: 30m
+    tmpfs:
+      - /tmp
+    tty: true
+    volumes:
+      - type: bind
+        source: ${QBT_CONFIG_PATH}
+        target: /config
+        read_only: false
+      - type: bind
+        source: ${NGINX_STATIC_PATH}
+        target: /downloads
+        read_only: false
+    networks:
+      my_net:
+        ipv4_address: ${QBITTORRENT_NOX_IP}
+    restart: unless-stopped
