@@ -222,3 +222,10 @@ services:
         source: ${NGINX_STATIC_PATH}
         target: /root/Download
         read_only: false
+  my_syncthing:
+    image: syncthing/syncthing:latest
+    hostname: remote-sync
+    environment:
+      - STGUIADDRESS=
+    network_mode: host
+    restart: unless-stopped
