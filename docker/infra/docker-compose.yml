@@ -8,6 +8,8 @@ networks:
 volumes:
   nextcloud_aio_mastercontainer:
     name: nextcloud_aio_mastercontainer
+  syncthing:
+    name: syncthing
 
 services:
   my_mysql:
@@ -229,3 +231,5 @@ services:
       - STGUIADDRESS=
     network_mode: host
     restart: unless-stopped
+    volumes:
+      - syncthing:/var/syncthing
