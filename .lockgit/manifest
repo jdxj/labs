@@ -26,7 +26,7 @@ Oqh291dUYEjFqvGJVXjyUq-u6Ydu7vRP	docker/infra/hysteria.yml
 0HX7TIG0xz4mSXmJyCNV6fEDg3TBLHiN	docker/infra/hysteria/conf/config.yaml
 mKzitReBn1DoAzGeV2d0KrSWkxcz7QqO	docker/infra/hysteria/conf/config_client.yaml
 gjDZ-NuarVwXMT-iAbmLmSPaZAS8aGTQ	docker/infra/nginx/conf.d/204.conf
-oK3gXbEke_haX59Mc2nn-dbyNOhofzy6	docker/infra/nginx/conf.d/htpasswd
+-MI2ipOsA17V8s06nlR4YMdq1wuhQqfh	docker/infra/nginx/conf.d/htpasswd
 5pi5PRLo_AZVIjxzA4CmesKcLpy1oAVu	docker/infra/nginx/conf.d/miniflux.conf
 nIzMyd7ph6kdo6D6oDXDpmOkbcGgdXcy	docker/infra/nginx/conf.d/note.conf
 oSREeyqVW_QAerJRHjuHWxktyFyoxIDd	docker/infra/nginx/conf.d/rabbitmq.conf
