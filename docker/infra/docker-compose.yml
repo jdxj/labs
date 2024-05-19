@@ -241,8 +241,8 @@ services:
       - TZ=Asia/Shanghai
     image: qbittorrentofficial/qbittorrent-nox:${QBT_VERSION}
     ports:
-      - 6881:6881/tcp
-      - 6881:6881/udp
+      - 16881:16881/tcp
+      - 16881:16881/udp
     read_only: true
     stop_grace_period: 30m
     tmpfs:
