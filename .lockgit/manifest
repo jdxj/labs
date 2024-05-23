@@ -22,7 +22,7 @@ Qtzzfx2Ez2vuhV4f540_vRDaPIXDWx52	config/xray/client/12_observatory.json
 TPlamNvdNPejhXULCeg4xXye-_0qxwlS	config/xray/homebrew.mxcl.xray.plist
 QPnWLVS9bAZzpJLqY0few05qQfS81W21	docker/infra/.env
 R74-4wJq8gm7lhCy6lr0F-rDhxvp2EzS	docker/infra/aria2/aria2.conf
-Oqh291dUYEjFqvGJVXjyUq-u6Ydu7vRP	docker/infra/hysteria.yml
+Dehc6PeOadOOLClrl8cbRv1w2tQKZlhM	docker/infra/hysteria.yml
 0HX7TIG0xz4mSXmJyCNV6fEDg3TBLHiN	docker/infra/hysteria/conf/config.yaml
 mKzitReBn1DoAzGeV2d0KrSWkxcz7QqO	docker/infra/hysteria/conf/config_client.yaml
 gjDZ-NuarVwXMT-iAbmLmSPaZAS8aGTQ	docker/infra/nginx/conf.d/204.conf
