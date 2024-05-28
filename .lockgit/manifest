@@ -35,11 +35,11 @@ oSREeyqVW_QAerJRHjuHWxktyFyoxIDd	docker/infra/nginx/conf.d/rabbitmq.conf
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 qbXH5EoCsZdCf7JtlL1j1kxBsdC_-L_S	docker/infra/xray-forward.yml
 8051D9MAVW6UMVY1neb2PCbun4IJ_o4x	docker/infra/xray-forward/Dockerfile
-8EpQcLJxzGVdUm6GoK6YlSC9CcTzc650	docker/infra/xray-forward/conf/config.json
+fY5IQ4dWQa6pv9x9dAgA0K1DthDZdX0D	docker/infra/xray-forward/conf/config.json
 GSzaH74UzA8FkSQiAGkLU_sNpeot3HKh	docker/infra/xray-forward/conf/pk.txt
 5Aviuajgzje2Bcy5MAbBxOY1kuityD0N	docker/infra/xray.yml
 dQ2YO9lVoYokBbD26CqTkrui4jEOQapv	docker/infra/xray/Dockerfile
-cN2zqKGgfoFBqdcsKtNG76ibuRDfoaon	docker/infra/xray/conf/config.json
+qNFBLp55jRiHzVddDSIcajPdGYny7V_0	docker/infra/xray/conf/config.json
 TU4P32okbzueWj4Kk-qK1gzyKpDCQadJ	docker/infra/xray/conf/pk.txt
 Zlw6dHTJ32_nQlgOTSbKR0suwE_fRN_K	recovery/github-recovery-codes.txt
 TIi3A4BMkWXIX7jyrbmdFxUXFX3Rnfu_	resume/resume.json
