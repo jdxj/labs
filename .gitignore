@@ -56,3 +56,4 @@ docker/infra/aria2/aria2.conf
 config/sing-box/**
 docker/infra/sing-box/conf/config.json
 docker/infra/sing-box/Dockerfile
+docker/infra/sing-box.yml

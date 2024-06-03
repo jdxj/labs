@@ -22,7 +22,7 @@ _iOKhWRiE8y7s2y3mAnYDBa5glt10wBB	config/xray/client/06_outbounds.json
 Qtzzfx2Ez2vuhV4f540_vRDaPIXDWx52	config/xray/client/12_observatory.json
 twwYTs2YggeMVL3oXeVeNwdsbITX2efS	config/xray/client/13_burstObservatory.json
 foywIZ-bMqnTdYZf6GHOYygFK5h25H5E	config/xray/homebrew.mxcl.xray.plist
-QPnWLVS9bAZzpJLqY0few05qQfS81W21	docker/infra/.env
+GVQiWK5GixIJGCYAnyHgVFQxnwK_K9Dp	docker/infra/.env
 R74-4wJq8gm7lhCy6lr0F-rDhxvp2EzS	docker/infra/aria2/aria2.conf
 Dehc6PeOadOOLClrl8cbRv1w2tQKZlhM	docker/infra/hysteria.yml
 0HX7TIG0xz4mSXmJyCNV6fEDg3TBLHiN	docker/infra/hysteria/conf/config.yaml
@@ -34,6 +34,7 @@ nIzMyd7ph6kdo6D6oDXDpmOkbcGgdXcy	docker/infra/nginx/conf.d/note.conf
 oSREeyqVW_QAerJRHjuHWxktyFyoxIDd	docker/infra/nginx/conf.d/rabbitmq.conf
 -lt1u9jhgE5qi_NhN806Bfuqk1NULQpY	docker/infra/nginx/conf.d/shirley.conf
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
+1T8-bIgBrGOghF9o5imNv6b_f7ENN9BY	docker/infra/sing-box.yml
 3RFvsj2e5_ggg_1L55Bq2hrQlWEFvFpo	docker/infra/sing-box/Dockerfile
 xccuB3onx5KKcRRwn6R7rMJ-IdmDZcCN	docker/infra/sing-box/conf/config.json
 qbXH5EoCsZdCf7JtlL1j1kxBsdC_-L_S	docker/infra/xray-forward.yml
