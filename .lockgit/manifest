@@ -34,7 +34,7 @@ nIzMyd7ph6kdo6D6oDXDpmOkbcGgdXcy	docker/infra/nginx/conf.d/note.conf
 oSREeyqVW_QAerJRHjuHWxktyFyoxIDd	docker/infra/nginx/conf.d/rabbitmq.conf
 -lt1u9jhgE5qi_NhN806Bfuqk1NULQpY	docker/infra/nginx/conf.d/shirley.conf
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
-hrg09PvGzfDRiz503Ht7Enk8tlfvikSX	docker/infra/sing-box/Dockerfile
+gmHosGPfgX4mxErlkfAPzO2C8-HLlDAy	docker/infra/sing-box/Dockerfile
 xccuB3onx5KKcRRwn6R7rMJ-IdmDZcCN	docker/infra/sing-box/conf/config.json
 qbXH5EoCsZdCf7JtlL1j1kxBsdC_-L_S	docker/infra/xray-forward.yml
 8051D9MAVW6UMVY1neb2PCbun4IJ_o4x	docker/infra/xray-forward/Dockerfile
