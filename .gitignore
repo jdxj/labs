@@ -54,3 +54,5 @@ docker/infra/hysteria/conf/**
 docker/infra/nginx/conf.d/htpasswd
 docker/infra/aria2/aria2.conf
 config/sing-box/**
+docker/infra/sing-box/conf/config.json
+docker/infra/sing-box/Dockerfile
