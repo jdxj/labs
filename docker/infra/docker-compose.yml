@@ -93,6 +93,10 @@ services:
         source: ${NGINX_STATIC_PATH}
         target: /etc/nginx/static
         read_only: true
+      - type: bind
+        source: ${NGINX_APP_PATH}
+        target: /etc/nginx/app
+        read_only: true
   my_miniflux:
     image: miniflux/miniflux:latest
     depends_on:
