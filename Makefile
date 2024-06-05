@@ -36,3 +36,4 @@ restart.%: open.config
 host.key:
 	mkdir -p /etc/letsencrypt/live/host
 	cat /etc/letsencrypt/live/$(shell hostname)/privkey.pem > /etc/letsencrypt/live/host/privkey.pem
+	cat /etc/letsencrypt/live/$(shell hostname)/cert.pem > /etc/letsencrypt/live/host/cert.pem
