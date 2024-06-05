@@ -1,5 +1,4 @@
 DOCKER := cd docker/infra && \
-	HOST=$(shell hostname) \
 	docker compose -f docker-compose.yml -f xray.yml -f xray-forward.yml \
 		-f hysteria.yml -f sing-box.yml
 
@@ -32,3 +31,7 @@ up.%: open.config down.% rm.image.% build.%
 .PHONY: restart.%
 restart.%: open.config
 	$(DOCKER) restart my_$*
+
+.PHONY: link.host
+link.host:
+	ln -sf /etc/letsencrypt/live/$(shell hostname) /etc/letsencrypt/live/host
