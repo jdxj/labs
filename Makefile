@@ -25,15 +25,9 @@ build.%:
 		docker buildx build --no-cache -t jdxj/$*:latest .
 
 .PHONY: up.%
-up.%: open.config host.key down.% rm.image.% build.%
+up.%: open.config down.% rm.image.% build.%
 	$(DOCKER) up -d my_$*
 
 .PHONY: restart.%
 restart.%: open.config
 	$(DOCKER) restart my_$*
-
-.PHONY: host.key
-host.key:
-	mkdir -p /etc/letsencrypt/live/host
-	cat /etc/letsencrypt/live/$(shell hostname)/privkey.pem > /etc/letsencrypt/live/host/privkey.pem
-	cat /etc/letsencrypt/live/$(shell hostname)/cert.pem > /etc/letsencrypt/live/host/cert.pem
