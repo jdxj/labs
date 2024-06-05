@@ -31,3 +31,12 @@ up.%: open.config down.% rm.image.% build.%
 .PHONY: restart.%
 restart.%: open.config
 	$(DOCKER) restart my_$*
+
+.PHONY: merge.sb.%
+merge.sb.%:
+	sing-box merge docker/infra/sing-box/conf/config.json \
+		-c config/sing-box/server/01_log.json \
+		-c config/sing-box/server/02_dns.json \
+		-c config/sing-box/server/03_inbounds_$*.json \
+		-c config/sing-box/server/04_outbounds.json \
+		-c config/sing-box/server/05_route.json
