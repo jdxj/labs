@@ -25,7 +25,7 @@ build.%:
 		docker buildx build --no-cache -t jdxj/$*:latest .
 
 .PHONY: up.%
-up.%: open.config down.% rm.image.% build.%
+up.%: open.config link.host down.% rm.image.% build.%
 	$(DOCKER) up -d my_$*
 
 .PHONY: restart.%
