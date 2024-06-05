@@ -1,6 +1,7 @@
-export HOST=$(shell hostname)
-
-DOCKER := cd docker/infra && docker compose -f docker-compose.yml -f xray.yml -f xray-forward.yml -f hysteria.yml -f sing-box.yml
+DOCKER := HOST=$(shell hostname) && \
+	cd docker/infra && \
+	docker compose -f docker-compose.yml \
+		-f xray.yml -f xray-forward.yml -f hysteria.yml -f sing-box.yml
 
 .PHONY: open.config
 open.config:
