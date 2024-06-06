@@ -49,13 +49,16 @@ merge.app: path_config := config/sing-box/client
 merge.app: args := -c $(path_config)/02_dns.json \
 				   -c $(path_config)/03_inbounds.json \
 				   -c $(path_config)/04_outbounds.json \
-				   -c $(path_config)/05_route.json \
 				   -c $(path_config)/06_experimental.json
 .PHONY: merge.app
 merge.app: open.config
-	sing-box merge $(output) $(args) -c $(path_config)/01_log.json
+	sing-box merge $(output) $(args) \
+		-c $(path_config)/01_log.json \
+		-c $(path_config)/05_route.json
 	sing-box check -c $(output)
-	sing-box merge $(output_dev) $(args) -c $(path_config)/01_log_dev.json
+	sing-box merge $(output_dev) $(args) \
+		-c $(path_config)/01_log_dev.json \
+		-c $(path_config)/05_route_dev.json
 	sing-box check -c $(output_dev)
 
 merge.nginx.%: output := docker/infra/nginx/conf.d

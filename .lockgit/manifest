@@ -19,6 +19,7 @@ y0M25gtzHwj9eaF-MJWg_NYLdSp6JBCo	config/sing-box/client/01_log_dev.json
 zMnlqHs0MDGbGCv2XnsLjSBsmm5qfjNf	config/sing-box/client/03_inbounds.json
 aO8KJBtlzyfiZ0_vdhqIA0VS8KvIBHIr	config/sing-box/client/04_outbounds.json
 1heT05mnWpRmIqgNssVERfzIQmbsPElU	config/sing-box/client/05_route.json
+Iv6Ixq91jBNbhxcdwtzmm-IAB7W2XmYp	config/sing-box/client/05_route_dev.json
 K-Jova4AmohC--NDMbZHhoWDk-E3kZpp	config/sing-box/client/06_experimental.json
 OH6llLHxtVw-ysmvWBlHS0CNkhQIJxxh	config/sing-box/server/01_log.json
 xeP2kFt-lqfEVMOxAIY-SuINSTD6aRcI	config/sing-box/server/02_dns.json
