@@ -29,6 +29,7 @@ docker/infra/memos/memos_prod.*
 docker/infra/wordpress
 docker/infra/nginx/app/sing-box.json
 docker/infra/nginx/app/sing-box-dev.json
+docker/infra/nginx/conf.d/*.conf
 
 # lockgit
 ca/rabbit/**
