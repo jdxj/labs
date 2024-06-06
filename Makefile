@@ -57,3 +57,9 @@ merge.app: open.config
 	sing-box check -c $(output)
 	sing-box merge $(output_dev) $(args) -c $(path_config)/01_log_dev.json
 	sing-box check -c $(output_dev)
+
+merge.nginx.%: output := docker/infra/nginx/conf.d
+.PHONY: merge.nginx.%
+merge.nginx.%: open.config
+	rm -vf $(output)/*.conf
+	cp -f config/nginx/$*_*.conf $(output)
