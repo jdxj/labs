@@ -1,6 +1,5 @@
 DOCKER := cd docker/infra && \
-	docker compose -f docker-compose.yml -f xray.yml -f xray-forward.yml \
-		-f hysteria.yml -f sing-box.yml
+		  docker compose -f docker-compose.yml -f xray.yml -f xray-forward.yml -f hysteria.yml -f sing-box.yml
 
 .PHONY: open.config
 open.config:
@@ -32,11 +31,29 @@ up.%: open.config down.% rm.image.% build.%
 restart.%: open.config
 	$(DOCKER) restart my_$*
 
+merge.sb.%: output := docker/infra/sing-box/conf/config.json
+merge.sb.%: path_config := config/sing-box/server
 .PHONY: merge.sb.%
 merge.sb.%:
-	sing-box merge docker/infra/sing-box/conf/config.json \
-		-c config/sing-box/server/01_log.json \
-		-c config/sing-box/server/02_dns.json \
-		-c config/sing-box/server/03_inbounds_$*.json \
-		-c config/sing-box/server/04_outbounds.json \
-		-c config/sing-box/server/05_route.json
+	sing-box merge $(output) \
+		-c $(path_config)/01_log.json \
+		-c $(path_config)/02_dns.json \
+		-c $(path_config)/03_inbounds_$*.json \
+		-c $(path_config)/04_outbounds.json \
+		-c $(path_config)/05_route.json
+	sing-box check -c $(output)
+
+merge.app: output     := docker/infra/nginx/app/sing-box.json
+merge.app: output_dev := docker/infra/nginx/app/sing-box-dev.json
+merge.app: path_config := config/sing-box/client
+merge.app: args := -c $(path_config)/02_dns.json \
+				   -c $(path_config)/03_inbounds.json \
+				   -c $(path_config)/04_outbounds.json \
+				   -c $(path_config)/05_route.json \
+				   -c $(path_config)/06_experimental.json
+.PHONY: merge.app
+merge.app:
+	sing-box merge $(output) $(args) -c $(path_config)/01_log.json
+	sing-box check -c $(output)
+	sing-box merge $(output_dev) $(args) -c $(path_config)/01_log_dev.json
+	sing-box check -c $(output_dev)
