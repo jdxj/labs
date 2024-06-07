@@ -1,5 +1,6 @@
 DOCKER := cd docker/infra && \
 		  docker compose -f docker-compose.yml -f xray.yml -f xray-forward.yml -f hysteria.yml -f sing-box.yml
+INSTALL_PATH := /usr/local/bin
 
 .PHONY: open.config
 open.config:
@@ -66,3 +67,11 @@ merge.nginx.%: output := docker/infra/nginx/conf.d
 merge.nginx.%: open.config
 	rm -vf $(output)/*.conf
 	cp -f config/nginx/$*_*.conf $(output)
+
+install.ethr: tmp := $(mktemp -d)
+install.ethr: file_name := ethr_linux.zip
+.PHONY: install.ethr
+install.ethr:
+	wget -O $(tmp)/$(file_name) \
+		https://github.com/microsoft/ethr/releases/download/v1.0.0/$(file_name)
+	unzip -d $(INSTALL_PATH) $(tmp)/$(file_name)
