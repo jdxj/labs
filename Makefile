@@ -91,4 +91,4 @@ install.sing-box: file_name := $(tar_dir).tar.gz
 install.sing-box:
 	wget -O $(tmp)/$(file_name) \
 		https://github.com/SagerNet/sing-box/releases/download/v1.9.0/$(file_name)
-	tar -zxvf $(tmp)/$(file_name) -C $(INSTALL_PATH) $(tar_dir)/sing-box
+	tar --strip-components=1 -zxvf $(tmp)/$(file_name) -C $(INSTALL_PATH) $(tar_dir)/sing-box
