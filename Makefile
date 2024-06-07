@@ -75,3 +75,11 @@ install.ethr:
 	wget -O $(tmp)/$(file_name) \
 		https://github.com/microsoft/ethr/releases/download/v1.0.0/$(file_name)
 	unzip -d $(INSTALL_PATH) $(tmp)/$(file_name)
+
+install.lockgit: tmp := $(mktemp -d)
+install.lockgit: file_name := lockgit_0.9.0_linux_amd64.tar.gz
+.PHONY: install.lockgit
+install.lockgit:
+	wget -O $(tmp)/$(file_name) \
+		https://github.com/jswidler/lockgit/releases/download/v0.9.0/$(file_name)
+	tar -zxvf $(tmp)/$(file_name) -C $(INSTALL_PATH) lockgit
