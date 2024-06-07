@@ -83,3 +83,12 @@ install.lockgit:
 	wget -O $(tmp)/$(file_name) \
 		https://github.com/jswidler/lockgit/releases/download/v0.9.0/$(file_name)
 	tar -zxvf $(tmp)/$(file_name) -C $(INSTALL_PATH) lockgit
+
+install.sing-box: tmp := $(mktemp -d)
+install.sing-box: tar_dir := sing-box-1.9.0-linux-amd64
+install.sing-box: file_name := $(tar_dir).tar.gz
+.PHONY: install.sing-box
+install.sing-box:
+	wget -O $(tmp)/$(file_name) \
+		https://github.com/SagerNet/sing-box/releases/download/v1.9.0/$(file_name)
+	tar -zxvf $(tmp)/$(file_name) -C $(INSTALL_PATH) $(tar_dir)/sing-box
