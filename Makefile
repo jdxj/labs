@@ -34,14 +34,10 @@ restart.%: open.config
 
 merge.sb.%: output := docker/infra/sing-box/conf/config.json
 merge.sb.%: path_config := config/sing-box/server
+merge.sb.%: args := -c $(path_config)/01_log.json -c $(path_config)/02_dns.json
 .PHONY: merge.sb.%
 merge.sb.%: open.config
-	sing-box merge $(output) \
-		-c $(path_config)/01_log.json \
-		-c $(path_config)/02_dns.json \
-		-c $(path_config)/03_inbounds_$*.json \
-		-c $(path_config)/04_outbounds.json \
-		-c $(path_config)/05_route.json
+	sing-box merge $(output) $(args) -C $(path_config)/$*
 	sing-box check -c $(output)
 
 merge.app: output     := docker/infra/nginx/app/sing-box.json
