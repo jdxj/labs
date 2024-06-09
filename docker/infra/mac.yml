@@ -15,3 +15,6 @@ services:
   my_stackedit:
     ports:
       - 8080:8080
+  my_linkding:
+    ports:
+      - 8081:9090

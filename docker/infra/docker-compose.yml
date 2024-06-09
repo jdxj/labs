@@ -265,3 +265,11 @@ services:
       my_net:
         ipv4_address: ${QBITTORRENT_NOX_IP}
     restart: unless-stopped
+  my_linkding:
+    image: sissbruecker/linkding:latest
+    restart: unless-stopped
+    networks:
+      my_net:
+        ipv4_address: ${LINKDING_IP}
+    volumes:
+      - ${LD_HOST_DATA_DIR}:/etc/linkding/data
