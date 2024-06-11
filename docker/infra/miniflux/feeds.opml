@@ -2,7 +2,7 @@
 <opml version="2.0">
     <head>
         <title>Miniflux</title>
-        <dateCreated>Fri, 07 Jun 2024 09:37:06 UTC</dateCreated>
+        <dateCreated>Tue, 11 Jun 2024 07:24:11 UTC</dateCreated>
     </head>
     <body>
         <outline text="All">
@@ -140,10 +140,10 @@
             <outline title="虞双齐的博客" text="虞双齐的博客" xmlUrl="https://yushuangqi.com/index.xml" htmlUrl="https://yushuangqi.com/"></outline>
         </outline>
         <outline text="周刊">
-            <outline title="潮流周刊" text="潮流周刊" xmlUrl="https://weekly.tw93.fun/rss.xml" htmlUrl="https://weekly.tw93.fun/"></outline>
             <outline title="1Link.Fun" text="1Link.Fun" xmlUrl="https://1link.fun/index.xml" htmlUrl="https://1link.fun/"></outline>
             <outline title="Pseudoyu" text="Pseudoyu" xmlUrl="https://www.pseudoyu.com/zh/index.xml" htmlUrl="https://www.pseudoyu.com/zh/"></outline>
             <outline title="二丫讲梵" text="二丫讲梵" xmlUrl="https://wiki.eryajf.net/rss.xml" htmlUrl="https://wiki.eryajf.net"></outline>
+            <outline title="潮流周刊" text="潮流周刊" xmlUrl="https://weekly.tw93.fun/rss.xml" htmlUrl="https://weekly.tw93.fun/"></outline>
             <outline title="阮一峰的网络日志" text="阮一峰的网络日志" xmlUrl="http://feeds.feedburner.com/ruanyifeng" htmlUrl="http://www.ruanyifeng.com/blog/"></outline>
         </outline>
         <outline text="技术团队">
