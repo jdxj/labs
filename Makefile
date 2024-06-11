@@ -67,7 +67,7 @@ merge.nginx.%: open.config
 install.ethr: tmp := $(mktemp -d)
 install.ethr: file_name := ethr_linux.zip
 .PHONY: install.ethr
-install.ethr:
+install.ethr: install.base
 	wget -O $(tmp)/$(file_name) \
 		https://github.com/microsoft/ethr/releases/download/v1.0.0/$(file_name)
 	unzip -d $(INSTALL_PATH) $(tmp)/$(file_name)
@@ -118,4 +118,4 @@ install.certbot: install.snap
 
 .PHONY: install.base
 install.base:
-	apt install -y wget make vim
+	apt install -y wget make vim unzip
