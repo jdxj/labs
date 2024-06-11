@@ -10,6 +10,7 @@ Ai2j9JKDkABjFUG3K9DUnRJTSCWB56G5	config/nginx/bert_linkding.conf
 Sko6I9fzvvEMwrEPlb8TBQPZ7NFWd8eT	config/nginx/bert_qbn.conf
 QNGCDdnZYYH1geTO92zglsfgwWe1XIWm	config/nginx/bert_static.conf
 ztMSLCOk6LeXP0ZdUJcADBHgQrpJnbAx	config/nginx/bert_sync.conf
+XpxHkpn-g6_jeipHGNLyciImOgtXkin8	config/nginx/bert_vanblog.conf
 YdiSq1N1jjK2ccihXf-FKI709xs-KaYD	config/nginx/betty_app.conf
 S1u0mPM5Iiek49q0Cdc-sGhnSo7l63bM	config/nginx/ella_204.conf
 zqMNiQNiR8EmBli920UUkh-LbeX5Id7y	config/nginx/tina_miniflux.conf
@@ -65,7 +66,7 @@ _iOKhWRiE8y7s2y3mAnYDBa5glt10wBB	config/xray/client/06_outbounds.json
 Qtzzfx2Ez2vuhV4f540_vRDaPIXDWx52	config/xray/client/12_observatory.json
 twwYTs2YggeMVL3oXeVeNwdsbITX2efS	config/xray/client/13_burstObservatory.json
 foywIZ-bMqnTdYZf6GHOYygFK5h25H5E	config/xray/homebrew.mxcl.xray.plist
-aZ7CJDXLEGN57XOhfkQnu00wU5fqeLJI	docker/infra/.env
+-Bvz8_X0oXuKF6rGZNjjeyguCDNRaE8P	docker/infra/.env
 R74-4wJq8gm7lhCy6lr0F-rDhxvp2EzS	docker/infra/aria2/aria2.conf
 Dehc6PeOadOOLClrl8cbRv1w2tQKZlhM	docker/infra/hysteria.yml
 0HX7TIG0xz4mSXmJyCNV6fEDg3TBLHiN	docker/infra/hysteria/conf/config.yaml

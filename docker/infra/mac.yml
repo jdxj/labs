@@ -21,3 +21,6 @@ services:
   my_fusion:
     ports:
       - 8082:8080
+  my_vanblog:
+    ports:
+      - 8083:80
