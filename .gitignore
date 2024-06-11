@@ -23,6 +23,8 @@ docker/infra/qbittorrent-nox/config/*
 !docker/infra/qbittorrent-nox/config/.keep
 docker/infra/linkding/*
 !docker/infra/linkding/.keep
+docker/infra/fusion/*
+!docker/infra/fusion/.keep
 
 docker/infra/postgres/data
 docker/infra/redis/aof
@@ -58,3 +60,4 @@ docker/infra/sing-box/conf/config.json
 docker/infra/sing-box/Dockerfile
 docker/infra/sing-box.yml
 config/nginx/**
+config/rss/**

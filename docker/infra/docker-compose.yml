@@ -273,3 +273,15 @@ services:
         ipv4_address: ${LINKDING_IP}
     volumes:
       - ${LD_HOST_DATA_DIR}:/etc/linkding/data
+  my_fusion:
+    image: rook1e404/fusion:latest
+    environment:
+      - PASSWORD=${FUSION_PASSWORD}
+    volumes:
+      - type: bind
+        source: ${FUSION_DATA}
+        target: /data
+        read_only: false
+    networks:
+      my_net:
+        ipv4_address: ${FUSION_IP}

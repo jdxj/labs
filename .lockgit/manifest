@@ -5,6 +5,7 @@ Lsz_sEr7rHDxRlPaboU2B1uGpzgzeq8Z	ca/rabbit/pub.p12
 AmQ4QrjjA80YQRh1m0gsP3Iu6fiAN5Io	ca/rabbit/pub.pem
 ops4l1XuGbc31-DWPX8ZV9yaKUSnayi4	ca/rabbit/req.csr
 PSbNV0y1w-W4HxlIqyvOdSmxFSurWgot	config/nginx/bert_eugene-bot.conf
+abhzRt48DJDhrUgbrspleBmEzIj-XW4K	config/nginx/bert_fusion.conf
 Ai2j9JKDkABjFUG3K9DUnRJTSCWB56G5	config/nginx/bert_linkding.conf
 Sko6I9fzvvEMwrEPlb8TBQPZ7NFWd8eT	config/nginx/bert_qbn.conf
 QNGCDdnZYYH1geTO92zglsfgwWe1XIWm	config/nginx/bert_static.conf
@@ -14,6 +15,7 @@ b5pOEa_Wd58Mxx-EM82WiTl_1MzZ8dxV	config/nginx/tina_app.conf
 zqMNiQNiR8EmBli920UUkh-LbeX5Id7y	config/nginx/tina_miniflux.conf
 8jML64IZqgDnrb8rEc_ySnNDCvoieCux	config/nginx/tina_shirley.conf
 q5FvvTcL7AgY-AjrUfgNV_l3XlcnlOiG	config/nginx/tina_wordpress.conf
+8GNEeSpidjgcebbWvqWGxUlt0C_1iqrE	config/rss/feeds.opml
 N1by3WXs1kKtZwFGCHhhFgWHsViTKaPH	config/sing-box/client/01_log.json
 y0M25gtzHwj9eaF-MJWg_NYLdSp6JBCo	config/sing-box/client/01_log_dev.json
 cziHAqtgWY9sf0PS2g1EOaB4PgzMrwEV	config/sing-box/client/02_dns.json
@@ -63,7 +65,7 @@ _iOKhWRiE8y7s2y3mAnYDBa5glt10wBB	config/xray/client/06_outbounds.json
 Qtzzfx2Ez2vuhV4f540_vRDaPIXDWx52	config/xray/client/12_observatory.json
 twwYTs2YggeMVL3oXeVeNwdsbITX2efS	config/xray/client/13_burstObservatory.json
 foywIZ-bMqnTdYZf6GHOYygFK5h25H5E	config/xray/homebrew.mxcl.xray.plist
-akNYRopSgQUtUWpe0JdyoWPHgw1-_-Zg	docker/infra/.env
+aZ7CJDXLEGN57XOhfkQnu00wU5fqeLJI	docker/infra/.env
 R74-4wJq8gm7lhCy6lr0F-rDhxvp2EzS	docker/infra/aria2/aria2.conf
 Dehc6PeOadOOLClrl8cbRv1w2tQKZlhM	docker/infra/hysteria.yml
 0HX7TIG0xz4mSXmJyCNV6fEDg3TBLHiN	docker/infra/hysteria/conf/config.yaml
