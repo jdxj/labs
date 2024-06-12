@@ -74,7 +74,7 @@ mKzitReBn1DoAzGeV2d0KrSWkxcz7QqO	docker/infra/hysteria/conf/config_client.yaml
 -MI2ipOsA17V8s06nlR4YMdq1wuhQqfh	docker/infra/nginx/conf.d/htpasswd
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 X1JCZK_MbYSQ58tWNOO9cfHxRCqJXpzy	docker/infra/sing-box.yml
-3RFvsj2e5_ggg_1L55Bq2hrQlWEFvFpo	docker/infra/sing-box/Dockerfile
+7kxU2YZTZXid48zbfoRmy22golem5WQ2	docker/infra/sing-box/Dockerfile
 qbXH5EoCsZdCf7JtlL1j1kxBsdC_-L_S	docker/infra/xray-forward.yml
 8051D9MAVW6UMVY1neb2PCbun4IJ_o4x	docker/infra/xray-forward/Dockerfile
 5b8F-MeSE6ojepfbLm4b-ZhdMEbNRKgS	docker/infra/xray-forward/conf/config.json
