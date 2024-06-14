@@ -20,8 +20,6 @@ set laststatus=1
 set showmatch
 " 搜索时，高亮显示匹配结果。
 set hlsearch
-" 打开英语单词的拼写检查。
-set spell spelllang=en_us
 " 保留撤销历史。
 set undofile
 " Vim 需要记住多少次历史操作。
