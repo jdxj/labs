@@ -26,7 +26,8 @@ docker/infra/linkding/*
 docker/infra/fusion/*
 !docker/infra/fusion/.keep
 
-docker/infra/postgres/data
+docker/infra/postgres/data/*
+!docker/infra/postgres/data/.keep
 docker/infra/redis/aof
 docker/infra/memos/.thumbnail_cache/
 docker/infra/memos/memos_prod.*
