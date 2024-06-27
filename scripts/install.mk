@@ -1,6 +1,8 @@
 .PHONY: install.base
 install.base:
-	apt install -y wget make vim unzip curl
+	apt update
+	apt upgrade
+	apt install -y wget make vim unzip curl zsh git
 
 install.ethr: tmp := $(mktemp -d)
 install.ethr: file_name := ethr_linux.zip
