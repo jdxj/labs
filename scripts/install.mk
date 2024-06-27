@@ -1,3 +1,7 @@
+.PHONY: install.base
+install.base:
+	apt install -y wget make vim unzip curl
+
 install.ethr: tmp := $(mktemp -d)
 install.ethr: file_name := ethr_linux.zip
 .PHONY: install.ethr
@@ -49,7 +53,3 @@ install.snap:
 install.certbot: install.snap
 	snap install --classic certbot
 	ln -s /snap/bin/certbot /usr/bin/certbot
-
-.PHONY: install.base
-install.base:
-	apt install -y wget make vim unzip
