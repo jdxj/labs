@@ -9,7 +9,7 @@ merge.app.sb.%: path_output := docker/infra/nginx/app
 merge.app.sb.%: path_config := config/sing-box/client
 .PHONY: merge.app.sb.%
 merge.app.sb.%: open.config
-	sing-box merge $(path_output)/sing-box-$*.json -C $(path_config) -C $(path_config)/$*
+	sing-box merge $(path_output)/sing-box-$*.json -C $(path_config) -C $(path_config)/outbounds -C $(path_config)/$*
 	sing-box check -c $(path_output)/sing-box-$*.json
 
 merge.nginx.%: output := docker/infra/nginx/conf.d
