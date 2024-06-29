@@ -34,3 +34,6 @@ up.%: open.config down.% rm.image.% build.%
 .PHONY: restart.%
 restart.%: open.config
 	$(DOCKER) restart my_$*
+
+.PHONY: clean
+	@rm -vrf docker/infra/sing-box/log/access.log
