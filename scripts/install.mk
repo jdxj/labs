@@ -62,7 +62,7 @@ install.warp:
 		gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
 	echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ bookworm main" | \
 		tee /etc/apt/sources.list.d/cloudflare-client.list
-	apt update && apt install cloudflare-warp
+	apt update && apt install -y cloudflare-warp
 	warp-cli registration new
 	warp-cli set-mode proxy
 	warp-cli connect
