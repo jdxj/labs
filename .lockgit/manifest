@@ -21,7 +21,7 @@ N1by3WXs1kKtZwFGCHhhFgWHsViTKaPH	config/sing-box/client/01_log.json
 0kOS-c3VD41aY6c9j5WSiR3E-S5GBpjp	config/sing-box/client/02_dns.json
 3TbMEjWYjvXlMTY7XmqCG9sIKVH_6CGv	config/sing-box/client/03_inbounds.json
 Jst0z9GvGKkcxdaAkiDEuKJyncxva8ap	config/sing-box/client/04_outbounds.json
-h85lOjBVPQ80sLiuitZNqqR4JjpPhUSu	config/sing-box/client/05_route.json
+30W4nCtkinCqZ1y0D5OmlNCDznCegyuL	config/sing-box/client/05_route.json
 hRMuDFIsGM-tVSJtjUAt6sO4eSUr841_	config/sing-box/client/06_experimental.json
 djLGsftpq_KcTbAeAqOwfl9terIWsY08	config/sing-box/client/android/02_dns.json
 xEPjrUp40kf22MznBSIC3bWThJgaXXD7	config/sing-box/client/android/05_route.json
@@ -41,12 +41,16 @@ xeP2kFt-lqfEVMOxAIY-SuINSTD6aRcI	config/sing-box/server/02_dns.json
 yXLyL0IIWFlkj90myYzKeoEYr8yHBiJo	config/sing-box/server/03_inbounds.json
 Dn7oCBrFqygjMumLdth3oZOVuRoeys2J	config/sing-box/server/04_outbounds.json
 Loc3fFnebT36xdp74-hsJHofC7QM0JpB	config/sing-box/server/05_route.json
-2xMmtIYpcZpLkqNEY8G1pMWpv5rRLQJW	config/sing-box/server/bert/03_inbounds.json
+efnkGqjFb9nZd3EpRUUIPpTEDUQ-io3g	config/sing-box/server/bert/03_inbounds.json
+wfEScSh1vOI9R4ZQuB-XrcixhAlDwSwQ	config/sing-box/server/bert/04_outbounds.json
+Adl-2FNpnbAHhTr3muBEQAjxsx5AQ48a	config/sing-box/server/bert/05_route.json
 QtzAtI9di0vG_sFF_c6RDkwguzqk7cfS	config/sing-box/server/betty/03_inbounds.json
 u5ZVcFr9C3Fw16CoX6hxJXFnhJkLS5Kn	config/sing-box/server/betty/04_outbounds.json
 WkTmC-rijUmCwdcmXyBfNl3p0ZzeVoFr	config/sing-box/server/betty/05_route.json
 x_JNoum5EsV3ryYqliRywOd0pcmkaW8V	config/sing-box/server/ella/03_inbounds.json
 q4CkGGMqJPcW5qmdveNNjAoGbOB43HIS	config/sing-box/server/erln/02_dns.json
+BE6efSKsmPvNqUGlvmnDqLLLruv088_z	config/sing-box/server/erln/04_outbounds.json
+APrYRsY8SBUeLH2wcKSBXBOtJJmmlPzt	config/sing-box/server/erln/05_route.json
 2zCpCVkUp4hAL047jYV1sYkE2QbSE59K	config/sing-box/server/tina/03_inbounds.json
 hIwkQH22gPjwErYYpog32TB78Yhv5Zlw	config/sing-box/server/tina/04_outbounds.json
 6wUC_NPiM0a-4iUc0VYB0XBF-zv42wla	config/sing-box/server/tina/05_route.json
