@@ -46,14 +46,14 @@ wfEScSh1vOI9R4ZQuB-XrcixhAlDwSwQ	config/sing-box/server/bert/04_outbounds.json
 Adl-2FNpnbAHhTr3muBEQAjxsx5AQ48a	config/sing-box/server/bert/05_route.json
 QtzAtI9di0vG_sFF_c6RDkwguzqk7cfS	config/sing-box/server/betty/03_inbounds.json
 wXZRHBEhxKd11dS4shwL7zkIxA8V-NjD	config/sing-box/server/betty/04_outbounds.json
-WkTmC-rijUmCwdcmXyBfNl3p0ZzeVoFr	config/sing-box/server/betty/05_route.json
+ybU9jf03efMhwNWUl-MrDWTe76eo0aGm	config/sing-box/server/betty/05_route.json
 7h3YsrNwOFiqpYRq94e2XRjFEY4vVQmy	config/sing-box/server/ella/03_inbounds.json
 UpNJDHI_6-vK1z4ECUqm7PStsSsajiNi	config/sing-box/server/erln/02_dns.json
 BE6efSKsmPvNqUGlvmnDqLLLruv088_z	config/sing-box/server/erln/04_outbounds.json
 APrYRsY8SBUeLH2wcKSBXBOtJJmmlPzt	config/sing-box/server/erln/05_route.json
 2zCpCVkUp4hAL047jYV1sYkE2QbSE59K	config/sing-box/server/tina/03_inbounds.json
 j565YZMga4jPYcF0LWKp4wW1rj1clgz_	config/sing-box/server/tina/04_outbounds.json
-6wUC_NPiM0a-4iUc0VYB0XBF-zv42wla	config/sing-box/server/tina/05_route.json
+7icJBVyPSutBvCKYt1brvMfbkxsTRs-_	config/sing-box/server/tina/05_route.json
 qHd2qD6_CHomBnh8YkliHWGleB__ewmj	config/ssh/authorized_keys
 _kBSmIgfakfBaM4uNFBeQdRQy-0kT-K5	config/ssh/bert/id_ed25519
 o0fzs1DT0tiUOQd_M7BOrpB4HXzHkRFx	config/ssh/bert/id_ed25519.pub
