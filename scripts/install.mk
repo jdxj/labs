@@ -66,3 +66,7 @@ install.warp:
 	warp-cli registration new
 	warp-cli set-mode proxy
 	warp-cli connect
+
+.PHONY: install.brutal
+install.brutal:
+	bash <(curl -fsSL https://tcp.hy2.sh/)
