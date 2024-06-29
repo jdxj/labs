@@ -36,4 +36,5 @@ restart.%: open.config
 	$(DOCKER) restart my_$*
 
 .PHONY: clean
+clean:
 	@rm -vrf docker/infra/sing-box/log/access.log
