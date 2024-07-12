@@ -287,14 +287,12 @@ services:
         ipv4_address: ${FUSION_IP}
     restart: unless-stopped
   my_vanblog:
+    container_name: vanblog
     image: mereith/van-blog:latest
-    restart: unless-stopped
+    restart: always
     environment:
       - TZ=Asia/Shanghai
       - EMAIL=${EMAIL}
-    networks:
-      my_net:
-        ipv4_address: ${VANBLOG_IP}
     volumes:
       - ${VANBLOG_STATIC}:/app/static
       - ${VANBLOG_LOG}:/var/log
@@ -306,11 +304,8 @@ services:
   my_mongo:
     container_name: mongo
     image: mongo:latest
-    restart: unless-stopped
+    restart: always
     environment:
       - TZ=Asia/Shanghai
-    networks:
-      my_net:
-        ipv4_address: ${MONGO_IP}
     volumes:
       - ${VANBLOG_DB}:/data/db
