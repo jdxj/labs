@@ -27,7 +27,7 @@ o4IBzIXPg0jxOiAN4MkfzQ7n_G6XzM-x	config/sing-box/client/fixed/05_route.json
 UmyWqa1FfIGNYti8XFl81tdUparEDSUH	config/sing-box/client/ios/02_dns.json
 tPNWk4UVTFqpdX1QZ7sPUwmInD1d_A4Q	config/sing-box/client/ios/05_route.json
 nzPschGhuHQtwr2RPv_3otqyMLVguExq	config/sing-box/client/outbounds/01_erln.json
-AOOt_adR9wXy3ZVzcwwUEh6N-GLGFRq7	config/sing-box/client/outbounds/02_betty.json
+ZAGeWUFi62v4p0mFXtclNd-6JKsA3yGu	config/sing-box/client/outbounds/02_betty.json
 _ZnGtdEyrns_VwkFe_AnPgc8arFBataA	config/sing-box/client/outbounds/03_tina.json
 3dVWcKJRzvQKroiMFYbl72U60bo1XeQJ	config/sing-box/client/outbounds/04_ella.json
 tIVP0DxTIBZBRLTkGuGLITAUB9xtQlqh	config/sing-box/client/outbounds/05_bert.json
@@ -35,13 +35,13 @@ tIVP0DxTIBZBRLTkGuGLITAUB9xtQlqh	config/sing-box/client/outbounds/05_bert.json
 L-SLudM2TLFNLcsO9LYbPEEe5h5hKmEG	config/sing-box/client/outbounds/11_selector.json
 OH6llLHxtVw-ysmvWBlHS0CNkhQIJxxh	config/sing-box/server/01_log.json
 xeP2kFt-lqfEVMOxAIY-SuINSTD6aRcI	config/sing-box/server/02_dns.json
-7gSmRDdidcTlO1w6Se79wTQrRMguK-4m	config/sing-box/server/03_inbounds.json
+-9VZRTMhV4Zpk12oO05MhKw_qjZvNnkO	config/sing-box/server/03_inbounds.json
 Dn7oCBrFqygjMumLdth3oZOVuRoeys2J	config/sing-box/server/04_outbounds.json
 9ogrPo-HhiMNLVXeyrP0gNaeSHaVRnSf	config/sing-box/server/05_route.json
 I9vwRR4cgeEln78MqmCesYIyAtXFZCex	config/sing-box/server/bert/03_inbounds.json
 wfEScSh1vOI9R4ZQuB-XrcixhAlDwSwQ	config/sing-box/server/bert/04_outbounds.json
 Gdyc3y54oILM7IihoonCd_mIcnUPQHdT	config/sing-box/server/bert/05_route.json
-7dEaZsRiI6fG9f__p8w_zRc2jekQMaIe	config/sing-box/server/betty/03_inbounds.json
+DgwNs0uOrYUAHQ8lmCSKgm0mv7SzFm0i	config/sing-box/server/betty/03_inbounds.json
 X2yOl-mwGVyBWfG175yHpy7CMc7IhAf1	config/sing-box/server/betty/04_outbounds.json
 8pbtMpcYxvJET-6BDylt1Oyv0w2XOhFe	config/sing-box/server/betty/05_route.json
 OtW3uVDpNfSiWFLmubzkHdOW1hJK8E2K	config/sing-box/server/ella/03_inbounds.json
