@@ -286,6 +286,9 @@ services:
       my_net:
         ipv4_address: ${FUSION_IP}
     restart: unless-stopped
+    logging:
+      options:
+        max-size: "10m"
   my_vanblog:
     container_name: vanblog
     image: mereith/van-blog:latest
