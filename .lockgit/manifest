@@ -14,7 +14,7 @@ YdiSq1N1jjK2ccihXf-FKI709xs-KaYD	config/nginx/betty_app.conf
 S1u0mPM5Iiek49q0Cdc-sGhnSo7l63bM	config/nginx/ella_204.conf
 q5FvvTcL7AgY-AjrUfgNV_l3XlcnlOiG	config/nginx/tina_wordpress.conf
 Rl5TV9papwioXQw1-DBEht9RcDPv7BWK	config/rss/feeds.opml
-N1by3WXs1kKtZwFGCHhhFgWHsViTKaPH	config/sing-box/client/01_log.json
+iZgX_t_nLsf-Y4zjFjiD3ghUHrhRRmt4	config/sing-box/client/01_log.json
 bRCmZ85Tc2OnY1iz9--JjRpjP9RGkCkH	config/sing-box/client/02_dns.json
 pqw6CmGTR3M6Fb4JxpBqrnKqww3kNX3F	config/sing-box/client/03_inbounds.json
 Jst0z9GvGKkcxdaAkiDEuKJyncxva8ap	config/sing-box/client/04_outbounds.json
@@ -22,6 +22,7 @@ WJSRdeENnSsV2gMvMhPGQPDNt_o_OxTW	config/sing-box/client/05_route.json
 hRMuDFIsGM-tVSJtjUAt6sO4eSUr841_	config/sing-box/client/06_experimental.json
 0DVAXSBPUsglzBENJDYiJg1a9sshUFlH	config/sing-box/client/android/02_dns.json
 lXHvmw_aXBazKk_gPQzpXjZao8fVmhmU	config/sing-box/client/android/05_route.json
+gcaebHXbipwzD7x0OunXswVmHcn36PZC	config/sing-box/client/fixed/01_log.json
 g_UKFfnbM00UgRdLz_TQr35f8k9XMtpi	config/sing-box/client/fixed/02_dns.json
 7nSo7OtQ5rkVK16xLvAkGM5ax0NxOIBE	config/sing-box/client/fixed/05_route.json
 UmyWqa1FfIGNYti8XFl81tdUparEDSUH	config/sing-box/client/ios/02_dns.json
