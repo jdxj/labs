@@ -332,3 +332,7 @@ services:
         source: ${MADDY_DATA}
         target: /data
         read_only: false
+      - type: bind
+        source: ${MADDY_CERTS}
+        target: /etc/maddy/certs
+        read_only: true
