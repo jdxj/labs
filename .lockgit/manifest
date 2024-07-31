@@ -77,12 +77,12 @@ _iOKhWRiE8y7s2y3mAnYDBa5glt10wBB	config/xray/client/06_outbounds.json
 Qtzzfx2Ez2vuhV4f540_vRDaPIXDWx52	config/xray/client/12_observatory.json
 twwYTs2YggeMVL3oXeVeNwdsbITX2efS	config/xray/client/13_burstObservatory.json
 foywIZ-bMqnTdYZf6GHOYygFK5h25H5E	config/xray/homebrew.mxcl.xray.plist
-a26G01FKGt2TlWcZJRfKCpb9mP3TL0hr	docker/infra/.env
+qd9pB0rmEizu-AnO2tKD4ysJp-GJrl9m	docker/infra/.env
 R74-4wJq8gm7lhCy6lr0F-rDhxvp2EzS	docker/infra/aria2/aria2.conf
 Dehc6PeOadOOLClrl8cbRv1w2tQKZlhM	docker/infra/hysteria.yml
 0HX7TIG0xz4mSXmJyCNV6fEDg3TBLHiN	docker/infra/hysteria/conf/config.yaml
 mKzitReBn1DoAzGeV2d0KrSWkxcz7QqO	docker/infra/hysteria/conf/config_client.yaml
-Oi6vmRS4OM9V94x8dIsvdAjA6GMLfipx	docker/infra/maddy/maddy.conf
+PbUFkQIhpi4MNCfZrpW4tHQvcFNZnlq3	docker/infra/maddy/maddy.conf
 -MI2ipOsA17V8s06nlR4YMdq1wuhQqfh	docker/infra/nginx/conf.d/htpasswd
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 X1JCZK_MbYSQ58tWNOO9cfHxRCqJXpzy	docker/infra/sing-box.yml
