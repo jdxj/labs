@@ -65,3 +65,4 @@ docker/infra/sing-box/Dockerfile
 docker/infra/sing-box.yml
 config/nginx/**
 config/rss/**
+docker/infra/maddy/maddy.conf

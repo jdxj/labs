@@ -82,6 +82,7 @@ R74-4wJq8gm7lhCy6lr0F-rDhxvp2EzS	docker/infra/aria2/aria2.conf
 Dehc6PeOadOOLClrl8cbRv1w2tQKZlhM	docker/infra/hysteria.yml
 0HX7TIG0xz4mSXmJyCNV6fEDg3TBLHiN	docker/infra/hysteria/conf/config.yaml
 mKzitReBn1DoAzGeV2d0KrSWkxcz7QqO	docker/infra/hysteria/conf/config_client.yaml
+A4HyIn5jcWC1VUiWm2NelNk3pZpjdTxC	docker/infra/maddy/maddy.conf
 -MI2ipOsA17V8s06nlR4YMdq1wuhQqfh	docker/infra/nginx/conf.d/htpasswd
 KZ6L7LBe0PGuM1V9FqkbLFZTCB-9eucU	docker/infra/shirley/config/config.yaml
 X1JCZK_MbYSQ58tWNOO9cfHxRCqJXpzy	docker/infra/sing-box.yml
