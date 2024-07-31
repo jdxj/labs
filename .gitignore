@@ -27,6 +27,8 @@ docker/infra/fusion/*
 !docker/infra/fusion/.keep
 docker/infra/nginx/static/*
 !docker/infra/nginx/static/.keep
+docker/infra/maddy/*
+!docker/infra/maddy/.keep
 
 docker/infra/postgres/data/*
 !docker/infra/postgres/data/.keep

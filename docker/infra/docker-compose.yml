@@ -312,3 +312,22 @@ services:
       - TZ=Asia/Shanghai
     volumes:
       - ${VANBLOG_DB}:/data/db
+  my_maddy:
+    image: foxcpp/maddy:latest
+    restart: unless-stopped
+    networks:
+      my_net:
+        ipv4_address: ${MADDY_IP}
+    environment:
+      - MADDY_HOSTNAME=${MADDY_HOSTNAME}
+      - MADDY_DOMAIN=${MADDY_DOMAIN}
+    ports:
+      - 25:25
+      - 143:143
+      - 587:587
+      - 993:993
+    volumes:
+      - type: bind
+        source: ${MADDY_DATA}
+        target: /data
+        read_only: false
