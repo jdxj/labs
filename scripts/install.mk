@@ -70,3 +70,10 @@ install.warp:
 .PHONY: install.brutal
 install.brutal:
 	bash <(curl -fsSL https://tcp.hy2.sh/)
+
+.PHONY: install.timesyncd
+install.timesyncd:
+	apt install systemd-timesyncd
+	systemctl enable systemd-timesyncd
+	systemctl start systemd-timesyncd
+	timedatectl status
