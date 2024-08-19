@@ -112,33 +112,6 @@ services:
     networks:
       my_net:
         ipv4_address: ${MINIFLUX_IP}
-  my_memos:
-    image: ghcr.io/usememos/memos:latest
-    restart: unless-stopped
-    volumes:
-      - type: bind
-        source: ${MEMOS_CONF_PATH}
-        target: /var/opt/memos
-        read_only: false
-    networks:
-      my_net:
-        ipv4_address: ${MEMOS_IP}
-  my_shirley:
-    image: jdxj/shirley:467eb09f
-    command: [ /app/main ]
-    restart: unless-stopped
-    networks:
-      my_net:
-        ipv4_address: ${SHIRLEY_IP}
-    volumes:
-      - type: bind
-        source: ${SHIRLEY_CONFIG_PATH}
-        target: /app/config
-        read_only: true
-      - type: bind
-        source: ${SHIRLEY_LOG_PATH}
-        target: /app/log
-        read_only: false
   my_wordpress:
     image: wordpress:latest
     restart: unless-stopped
@@ -154,36 +127,6 @@ services:
         source: ${WORDPRESS_HTML}
         target: /var/www/html
         read_only: false
-  my_stackedit:
-    image: benweet/stackedit:latest
-    restart: unless-stopped
-    networks:
-      my_net:
-        ipv4_address: ${STACKEDIT_IP}
-  my_sourceforge-dl:
-    image: jdxj/sourceforge-dl:0.1.0
-    restart: unless-stopped
-    environment:
-      - RUST_LOG=reqwest=trace,sourceforge_dl=debug
-    command:
-      - /sourceforge-downloader/sourceforge-dl
-      - --save-dir
-      - /sourceforge-downloader/assets
-      - --domain
-      - ${SOURCEFORGE_DL_DOMAIN}
-      - --cron
-      - ${SOURCEFORGE_DL_CRON}
-      - ${SOURCEFORGE_DL_RSS_URL}
-      - ${SOURCEFORGE_DL_USER_ID}
-      - ${SOURCEFORGE_DL_TOKEN}
-    volumes:
-      - type: bind
-        source: ${SOURCEFORGE_DL_ASSETS}
-        target: /sourceforge-downloader/assets
-        read_only: false
-    networks:
-      my_net:
-        ipv4_address: ${SOURCEFORGE_DL_IP}
   my_nextcloud:
     image: nextcloud/all-in-one:latest
     init: true
