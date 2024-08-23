@@ -1,5 +1,7 @@
 .PHONY: merge.sb.%
 merge.sb.%: open.config
+	$(DOCKER) down my_sing-box
+	docker image prune -af
 	docker run --rm \
 		-v ./config/sing-box/server:/tmp/sing-box/server \
 		-v ./docker/infra/sing-box/conf:/tmp/sing-box/conf \

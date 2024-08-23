@@ -19,8 +19,10 @@ up.nginx.%: open.config merge.nginx.%
 	$(DOCKER) down my_nginx
 	docker image prune -af
 	rm -vf docker/infra/nginx/logs/*.log
+	mkdir -p /etc/letsencrypt
 	$(DOCKER) up -d my_nginx
 
-.PHONY: clean
-clean:
-	@rm -vrf docker/infra/sing-box/log/access.log
+.PHONY: up.sb.%
+up.sb.%: open.config merge.sb.%
+	rm -vf docker/infra/sing-box/log/*.log
+	$(DOCKER) up -d my_sing-box
