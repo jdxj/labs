@@ -38,6 +38,8 @@ docker/infra/postgres/data/*
 docker/infra/redis/aof
 docker/infra/nginx/app/*.json
 docker/infra/nginx/conf.d/*.conf
+docker/infra/sing-box/conf/*
+!docker/infra/sing-box/conf/.keep
 
 docker/infra/vanblog/config/*
 !docker/infra/vanblog/config/.keep
