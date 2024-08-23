@@ -39,6 +39,17 @@ docker/infra/redis/aof
 docker/infra/nginx/app/*.json
 docker/infra/nginx/conf.d/*.conf
 
+docker/infra/vanblog/config/*
+!docker/infra/vanblog/config/.keep
+docker/infra/vanblog/data/*
+!docker/infra/vanblog/data/.keep
+docker/infra/vanblog/db/*
+!docker/infra/vanblog/db/.keep
+docker/infra/vanblog/log/*
+!docker/infra/vanblog/log/.keep
+docker/infra/vanblog/static/*
+!docker/infra/vanblog/static/.keep
+
 # lockgit
 ca/rabbit/**
 ca/private/**
