@@ -4,14 +4,6 @@ install.base:
 	apt upgrade
 	apt install -y wget make vim unzip curl zsh git
 
-install.ethr: tmp := $(mktemp -d)
-install.ethr: file_name := ethr_linux.zip
-.PHONY: install.ethr
-install.ethr: install.base
-	wget -O $(tmp)/$(file_name) \
-		https://github.com/microsoft/ethr/releases/download/v1.0.0/$(file_name)
-	unzip -d $(INSTALL_PATH) $(tmp)/$(file_name)
-
 install.lockgit: tmp := $(mktemp -d)
 install.lockgit: file_name := lockgit_0.9.0_linux_amd64.tar.gz
 .PHONY: install.lockgit

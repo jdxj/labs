@@ -207,3 +207,8 @@ services:
         source: ${MADDY_CERTS}
         target: /etc/maddy/certs
         read_only: true
+  my_ethr:
+    image: jdxj/ethr
+    restart: unless-stopped
+    network_mode: host
+    command: [ "ethr","-s", "-no" ]

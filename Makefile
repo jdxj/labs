@@ -26,3 +26,13 @@ up.nginx.%: open.config merge.nginx.%
 up.sb.%: open.config merge.sb.%
 	rm -vf docker/infra/sing-box/log/*.log
 	$(DOCKER) up -d my_sing-box
+
+.PHONY: up.ethr
+up.ethr:
+	cd docker/infra/ethr && \
+		docker buildx build -t jdxj/ethr .
+	$(DOCKER) up -d my_ethr
+
+.PHONY: down.%
+down.%:
+	$(DOCKER) down my_$*
