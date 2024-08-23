@@ -36,9 +36,6 @@ docker/infra/maddy/*
 docker/infra/postgres/data/*
 !docker/infra/postgres/data/.keep
 docker/infra/redis/aof
-docker/infra/memos/.thumbnail_cache/
-docker/infra/memos/memos_prod.*
-docker/infra/wordpress
 docker/infra/nginx/app/*.json
 docker/infra/nginx/conf.d/*.conf
 
@@ -46,25 +43,12 @@ docker/infra/nginx/conf.d/*.conf
 ca/rabbit/**
 ca/private/**
 docker/infra/.env
-docker/infra/xray.yml
-docker/infra/shirley/config/config.yaml
-docker/infra/xray/conf/**
-docker/infra/xray/Dockerfile
-config/xray/**
 config/ssh/**
 recovery/**
-docker/infra/xray-forward/conf/**
-docker/infra/xray-forward/Dockerfile
-docker/infra/xray-forward.yml
 config/sshd/env.conf
 resume/**
-docker/infra/hysteria.yml
-docker/infra/hysteria/conf/**
 docker/infra/nginx/conf.d/htpasswd
-docker/infra/aria2/aria2.conf
 config/sing-box/**
-docker/infra/sing-box/conf/config.json
-docker/infra/sing-box/Dockerfile
 docker/infra/sing-box.yml
 config/nginx/**
 config/rss/**

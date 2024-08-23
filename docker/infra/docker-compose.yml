@@ -6,8 +6,6 @@ networks:
         - subnet: ${SUBNET}
 
 volumes:
-  nextcloud_aio_mastercontainer:
-    name: nextcloud_aio_mastercontainer
   syncthing:
     name: syncthing
 
@@ -101,80 +99,6 @@ services:
         source: ${NGINX_APP_PATH}
         target: /etc/nginx/app
         read_only: true
-  my_miniflux:
-    image: miniflux/miniflux:latest
-    depends_on:
-      my_postgres:
-        condition: service_healthy
-    environment:
-      - DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASS}@${POSTGRES_IP}:5432/miniflux?sslmode=disable
-      - RUN_MIGRATIONS=1
-      - CREATE_ADMIN=1
-      - ADMIN_USERNAME=${MINIFLUX_USER}
-      - ADMIN_PASSWORD=${MINIFLUX_PASS}
-    restart: unless-stopped
-    networks:
-      my_net:
-        ipv4_address: ${MINIFLUX_IP}
-  my_wordpress:
-    image: wordpress:latest
-    restart: unless-stopped
-    environment:
-      - WORDPRESS_DB_HOST=${MYSQL_IP}
-      - WORDPRESS_DB_USER=root
-      - WORDPRESS_DB_PASSWORD=${MYSQL_PASS}
-    networks:
-      my_net:
-        ipv4_address: ${WORDPRESS_IP}
-    volumes:
-      - type: bind
-        source: ${WORDPRESS_HTML}
-        target: /var/www/html
-        read_only: false
-  my_nextcloud:
-    image: nextcloud/all-in-one:latest
-    init: true
-    restart: unless-stopped
-    container_name: nextcloud-aio-mastercontainer
-    volumes:
-      - nextcloud_aio_mastercontainer:/mnt/docker-aio-config
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-    environment:
-      - APACHE_PORT=11000
-      - APACHE_IP_BINDING=0.0.0.0
-    networks:
-      my_net:
-        ipv4_address: ${NEXTCLOUD_IP}
-    ports:
-      - 8080:8080
-  my_eugene-bot:
-    image: jdxj/eugene-bot:0.1.0
-    restart: unless-stopped
-    environment:
-      - RUST_LOG=debug
-      - EUGENE_BOT_DOMAIN=${EUGENE_BOT_DOMAIN}
-      - TELOXIDE_TOKEN=${EUGENE_BOT_TOKEN}
-      - ARIA2_SECRET=${EUGENE_BOT_ARIA2_SECRET}
-      - ARIA2_WS_ADDR=${EUGENE_BOT_ARIA2_WS_ADDR}
-      - CHAT_ID=${EUGENE_BOT_CHAT_ID}
-    networks:
-      my_net:
-        ipv4_address: ${EUGENE_BOT_IP}
-  my_aria2:
-    image: jdxj/aria2:latest
-    restart: unless-stopped
-    networks:
-      my_net:
-        ipv4_address: ${ARIA2_IP}
-    volumes:
-      - type: bind
-        source: ${ARIA2_CONFIG_PATH}
-        target: /root/.aria2
-        read_only: false
-      - type: bind
-        source: ${NGINX_STATIC_PATH}
-        target: /root/Download
-        read_only: false
   my_syncthing:
     image: syncthing/syncthing:latest
     hostname: remote-sync

@@ -2,7 +2,7 @@ include scripts/merge.mk
 include scripts/install.mk
 
 DOCKER := cd docker/infra && \
-		  docker compose -f docker-compose.yml -f xray.yml -f xray-forward.yml -f hysteria.yml -f sing-box.yml
+		  docker compose -f docker-compose.yml -f sing-box.yml
 INSTALL_PATH := /usr/local/bin
 
 .PHONY: open.config
@@ -14,21 +14,12 @@ open.config:
 close.config:
 	lockgit close
 
-.PHONY: down.%
-down.%:
-	$(DOCKER) down my_$*
-
 .PHONY: rm.image.%
 rm.image.%:
 	docker image rm -f jdxj/$*:latest
 
-.PHONY: build.%
-build.%:
-	cd docker/infra/$* && \
-		docker buildx build --no-cache -t jdxj/$*:latest .
-
 .PHONY: up.%
-up.%: open.config down.% rm.image.% build.%
+up.%: open.config rm.image.%
 	$(DOCKER) up -d my_$*
 
 .PHONY: restart.%
