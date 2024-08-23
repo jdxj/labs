@@ -14,17 +14,12 @@ open.config:
 close.config:
 	lockgit close
 
-.PHONY: rm.image.%
-rm.image.%:
-	docker image rm -f jdxj/$*:latest
-
-.PHONY: up.%
-up.%: open.config rm.image.%
-	$(DOCKER) up -d my_$*
-
-.PHONY: restart.%
-restart.%: open.config
-	$(DOCKER) restart my_$*
+.PHONY: up.nginx.%
+up.nginx.%: open.config merge.nginx.%
+	$(DOCKER) down my_nginx
+	docker image prune -af
+	rm -vf docker/infra/nginx/logs/*.log
+	$(DOCKER) up -d my_nginx
 
 .PHONY: clean
 clean:
