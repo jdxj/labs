@@ -33,6 +33,10 @@ up.ethr:
 		docker buildx build -t jdxj/ethr .
 	$(DOCKER) up -d my_ethr
 
+.PHONY: up.mysql
+up.mysql:
+	$(DOCKER) up -d my_mysql
+
 .PHONY: down.%
 down.%:
 	$(DOCKER) down my_$*
