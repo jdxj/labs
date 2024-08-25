@@ -26,7 +26,7 @@ g_UKFfnbM00UgRdLz_TQr35f8k9XMtpi	config/sing-box/client/fixed/02_dns.json
 CQJ2a7uaKqvHmRET1bfSiFew_eLNiqi9	config/sing-box/client/fixed/05_route.json
 UmyWqa1FfIGNYti8XFl81tdUparEDSUH	config/sing-box/client/ios/02_dns.json
 VNA5glswIH3uRKsJXHq8KICNQy2wEtnm	config/sing-box/client/ios/05_route.json
-NW_NLKTS7nm3iz2qaadYHVbrrs7vrWvf	config/sing-box/client/outbounds/01_erln.json
+kAN3x78W8WOO2lLkEaAfqcUPWYe0_8A2	config/sing-box/client/outbounds/01_erln.json
 -lTnxd9-d-ImE6P__HN9QrYhkANdpiN0	config/sing-box/client/outbounds/02_betty.json
 -rJV2YXpj1R3t5DF9FV88_OYP43emHZv	config/sing-box/client/outbounds/03_tina.json
 Y-XZCsKu7dDRlaxPb1b64qiL80KojZuQ	config/sing-box/client/outbounds/04_ella.json
@@ -35,7 +35,7 @@ tIVP0DxTIBZBRLTkGuGLITAUB9xtQlqh	config/sing-box/client/outbounds/05_bert.json
 BOX-2f9BxFDRnxoMj46lL04klF3qRZvg	config/sing-box/client/outbounds/11_selector.json
 bGMJ5PzJ-fQVaPvtVhQa0dADVu0pLN9P	config/sing-box/server/01_log.json
 ClxNDW9egDVXQF4r25QaftAoyheKAmZg	config/sing-box/server/02_dns.json
--9VZRTMhV4Zpk12oO05MhKw_qjZvNnkO	config/sing-box/server/03_inbounds.json
+5FQLamMgnsQAK_oGaI9evYS4GvF4IRoG	config/sing-box/server/03_inbounds.json
 Dn7oCBrFqygjMumLdth3oZOVuRoeys2J	config/sing-box/server/04_outbounds.json
 _eQdtCk7RYDShphobBkEUG0BWxIbZRQr	config/sing-box/server/05_route.json
 2msCgdLWz4zgZICd5LP8uIYN0myczCuW	config/sing-box/server/bert/03_inbounds.json
