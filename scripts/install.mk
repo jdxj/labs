@@ -60,3 +60,11 @@ install.timesyncd:
 	systemctl enable systemd-timesyncd
 	systemctl start systemd-timesyncd
 	timedatectl status
+
+.PHONY: install.sysstat
+install.sysstat:
+	apt install -y sysstat
+
+.PHONY: install.iperf3
+install.iperf3:
+	apt install -y iperf3
