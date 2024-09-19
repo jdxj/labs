@@ -68,7 +68,7 @@ install.lockgit: install.wget
 	wget -O $(tmp)/$(file_name) \
 		https://github.com/jswidler/lockgit/releases/download/v0.9.0/$(file_name)
 	tar -zxvf $(tmp)/$(file_name) -C $(INSTALL_PATH) lockgit
-	read -s key -p "key:"
+	read -p "key:" key
 	lockgit set-key $$(key)
 
 # certbot leaf required
