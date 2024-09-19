@@ -68,3 +68,10 @@ install.sysstat:
 .PHONY: install.iperf3
 install.iperf3:
 	apt install -y iperf3
+
+install.ssh.config: CONFIG_PATH := ./config/ssh/config
+install.ssh.config: KEYS_PATH   := ./config/ssh/authorized_keys
+.PHONY install.ssh.config
+install.ssh.config: open.config
+	cp -f $(CONFIG_PATH) $(KEYS_PATH) ~/.ssh
+	chmod 0600 $(CONFIG_PATH) $(KEYS_PATH)
