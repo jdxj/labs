@@ -40,3 +40,27 @@ up.mysql:
 .PHONY: down.%
 down.%:
 	$(DOCKER) down my_$*
+
+.PHONY: hostname.%
+hostname.%:
+	hostnamectl hostname $*
+
+# ssh.config
+ssh.config: CONFIG_PATH := ./config/ssh/config
+ssh.config: KEYS_PATH   := ./config/ssh/authorized_keys
+.PHONY: ssh.config
+ssh.config: open.config
+	cp -f $(CONFIG_PATH) $(KEYS_PATH) ~/.ssh
+	chmod 0600 $(CONFIG_PATH) $(KEYS_PATH)
+
+# ssh.keygen
+.PHONY: ssh.keygen.%
+ssh.keygen.%:
+	ssh-keygen -t ed25519 -C $*
+
+# sshd.config
+.PHONY: sshd.config
+sshd.config: ssh.config
+	rm -f /etc/ssh/sshd_config.d/*.conf
+	cp config/sshd/env.conf /etc/ssh/sshd_config.d
+	systemctl restart sshd

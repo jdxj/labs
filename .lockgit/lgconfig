@@ -1,1 +1,1 @@
-{"Ver":1,"Id":"d7570782-a202-4ba5-4c85-4b8ff6b58160","Patterns":["ca/private/**","ca/rabbit/**","config/nginx/**","config/rss/**","config/sing-box/**","config/ssh/**","recovery/**","resume/**"]}
+{"Ver":1,"Id":"d7570782-a202-4ba5-4c85-4b8ff6b58160","Patterns":["ca/private/**","ca/rabbit/**","config/lockgit/**","config/nginx/**","config/rss/**","config/sing-box/**","config/ssh/**","recovery/**","resume/**"]}
