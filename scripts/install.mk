@@ -12,7 +12,7 @@ install.curl: install.upgrade
 
 # wget
 .PHONY: install.wget
-install.curl: install.upgrade
+install.wget: install.upgrade
 	apt install -y wget
 
 # git
