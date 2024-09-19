@@ -32,6 +32,12 @@ install.snap: install.upgrade
 	snap install core
 	snap install hello-world
 
+# vim
+.PHONY: install.vim
+install.vim: install.upgrade
+	apt install -y vim
+	cp -f config/vim/.vimrc ~
+
 # zsh leaf required
 .PHONY: install.zsh
 install.zsh: install.upgrade install.curl install.git
@@ -108,7 +114,7 @@ install.iperf3: install.upgrade
 # base leaf required
 .PHONY: install.base
 install.base: install.upgrade
-	apt install -y vim unzip
+	apt install -y unzip
 
 # all
 .PHONY: install.all
