@@ -134,7 +134,7 @@ install.net-tools: install.upgrade
 	apt install -y net-tools
 
 .PHONY: install.hostname
-install.hostname.%:
+install.hostname:
 	@read -p "hostname:" hm && hostnamectl hostname $$hm
 
 # all
