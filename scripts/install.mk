@@ -32,7 +32,12 @@ install.snap: install.upgrade
 	snap install core
 	snap install hello-world
 
-# vim
+# ssh
+.PHONY: install.ssh
+install.ssh: open.config
+	cp -f ./config/ssh/config/* ~/.ssh
+
+# vim leaf
 .PHONY: install.vim
 install.vim: install.upgrade
 	apt install -y vim
@@ -94,12 +99,19 @@ install.brutal: install.curl
 	bash -c "$$(curl -fsSL https://tcp.hy2.sh/)"
 
 # timesyncd leaf required
-.PHONY: install.timesyncd
-install.timesyncd: install.upgrade
+.PHONY: install.systemd-timesyncd
+install.systemd-timesyncd: install.upgrade
 	apt install -y systemd-timesyncd
 	systemctl enable systemd-timesyncd
 	systemctl start systemd-timesyncd
 	timedatectl status
+
+# sshd
+.PHONY: install.sshd
+install.sshd: install.ssh
+	rm -vf /etc/ssh/sshd_config.d/*.conf
+	cp ./config/sshd/env.conf /etc/ssh/sshd_config.d
+	systemctl restart sshd
 
 # sysstat leaf
 .PHONY: install.sysstat
@@ -111,13 +123,13 @@ install.sysstat: install.upgrade
 install.iperf3: install.upgrade
 	apt install -y iperf3
 
-
 # base leaf required
 .PHONY: install.base
 install.base: install.upgrade
 	apt install -y unzip
 
+
 # all
 .PHONY: install.all
-install.all: install.docker install.lockgit install.certbot install.timesyncd \
-	install.base install.zsh
+install.all: install.docker install.lockgit install.certbot install.systemd-timesyncd \
+	install.base install.vim install.zsh
