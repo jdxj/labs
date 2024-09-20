@@ -51,7 +51,7 @@ install.warp: install.curl install.gpg
 		tee /etc/apt/sources.list.d/cloudflare-client.list
 	apt update && apt install -y cloudflare-warp
 	warp-cli registration new
-	warp-cli set-mode proxy
+	warp-cli mode proxy
 	warp-cli connect
 
 # brutal
@@ -145,8 +145,13 @@ install.sysctl:
 	cp -f ./config/kernel/sysctl.conf /etc/sysctl.conf
 	sysctl -p
 
+# passwd
+.PHONY: install.passwd
+install.passwd:
+	passwd
+
 # all
 .PHONY: install.all
 install.all: install.docker install.lockgit install.certbot install.systemd-timesyncd \
-	install.vim install.net-tools install.sysctl \
+	install.vim install.net-tools install.sysctl install.passwd \
 	install.hostname install.zsh
