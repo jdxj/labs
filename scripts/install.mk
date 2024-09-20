@@ -128,11 +128,16 @@ install.iperf3: install.upgrade
 install.net-tools: install.upgrade
 	apt install -y net-tools
 
-# hostname
+# hostname leaf required
 .PHONY: install.hostname
 install.hostname:
 	@read -p "hostname:" hm && hostnamectl hostname $$hm
 	@hostnamectl status
+
+# sysctl leaf required
+.PHONY: install.sysctl
+	cp -f ./config/kernel/sysctl.conf /etc/sysctl.conf
+	sysctl -p
 
 # all
 .PHONY: install.all
