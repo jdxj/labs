@@ -35,7 +35,7 @@ install.snap: install.upgrade
 # ssh
 .PHONY: install.ssh
 install.ssh: open.config
-	cp -f ./config/ssh/config/* ~/.ssh
+	cp -fp ./config/ssh/config/* ~/.ssh
 
 # vim leaf
 .PHONY: install.vim
