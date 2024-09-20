@@ -128,6 +128,14 @@ install.iperf3: install.upgrade
 install.base: install.upgrade
 	apt install -y unzip
 
+# net-tools
+.PHONY: install.net-tools
+install.net-tools: install.upgrade
+	apt install -y net-tools
+
+.PHONY: install.hostname
+install.hostname.%:
+	@read -p "hostname:" hm && hostnamectl hostname $$hm
 
 # all
 .PHONY: install.all

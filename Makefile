@@ -40,7 +40,3 @@ up.mysql:
 .PHONY: down.%
 down.%:
 	$(DOCKER) down my_$*
-
-.PHONY: hostname.%
-hostname.%:
-	hostnamectl hostname $*
