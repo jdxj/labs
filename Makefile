@@ -40,3 +40,7 @@ up.mysql:
 .PHONY: down.%
 down.%:
 	$(DOCKER) down my_$*
+
+.PHONY: lockgit.rm
+lockgit.rm:
+	@lockgit status | grep "unavailable" | awk '{print $1}' | xargs lockgit rm
