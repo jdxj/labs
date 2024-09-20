@@ -29,7 +29,7 @@ D_S5Mt2fifGpkFisy3tTvCRVRtc01opg	config/sing-box/client/fixed/05_route.json
 UmyWqa1FfIGNYti8XFl81tdUparEDSUH	config/sing-box/client/ios/02_dns.json
 VNA5glswIH3uRKsJXHq8KICNQy2wEtnm	config/sing-box/client/ios/05_route.json
 THrTIu1PYdCscdLEQGVb77pnTOvOULuh	config/sing-box/client/outbounds/01_erln.json
-RICAZadlrPjELfMBQ72dkiy5eSrYQJUz	config/sing-box/client/outbounds/02_daisy.json
+Ns2pnJTsj-JKihV-ZGwCrQPI-soysN02	config/sing-box/client/outbounds/02_daisy.json
 -rJV2YXpj1R3t5DF9FV88_OYP43emHZv	config/sing-box/client/outbounds/03_tina.json
 Y-XZCsKu7dDRlaxPb1b64qiL80KojZuQ	config/sing-box/client/outbounds/04_ella.json
 tIVP0DxTIBZBRLTkGuGLITAUB9xtQlqh	config/sing-box/client/outbounds/05_bert.json
@@ -43,7 +43,7 @@ Dn7oCBrFqygjMumLdth3oZOVuRoeys2J	config/sing-box/server/04_outbounds.json
 2msCgdLWz4zgZICd5LP8uIYN0myczCuW	config/sing-box/server/bert/03_inbounds.json
 wfEScSh1vOI9R4ZQuB-XrcixhAlDwSwQ	config/sing-box/server/bert/04_outbounds.json
 Gdyc3y54oILM7IihoonCd_mIcnUPQHdT	config/sing-box/server/bert/05_route.json
-h6BQxteag9T0DD6kwCgZPqKCudKxGmFn	config/sing-box/server/daisy/03_inbounds.json
+L6lHcE8y9f41h3MwxOhbrkIKQOBI5nWU	config/sing-box/server/daisy/03_inbounds.json
 SNURium3kF-nnWKolowRpg_EASgUTN4K	config/sing-box/server/daisy/04_outbounds.json
 yvqw6LkFXBhahDDuXToeOGzK-gQpE06T	config/sing-box/server/daisy/05_route.json
 24T6afwCmZYWppFcVOuo1NhynybyZuzY	config/sing-box/server/daisy/06_experimental.json
