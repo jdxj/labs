@@ -123,21 +123,19 @@ install.sysstat: install.upgrade
 install.iperf3: install.upgrade
 	apt install -y iperf3
 
-# base leaf required
-.PHONY: install.base
-install.base: install.upgrade
-	apt install -y unzip
-
-# net-tools
+# net-tools leaf required
 .PHONY: install.net-tools
 install.net-tools: install.upgrade
 	apt install -y net-tools
 
+# hostname
 .PHONY: install.hostname
 install.hostname:
 	@read -p "hostname:" hm && hostnamectl hostname $$hm
+	@hostnamectl status
 
 # all
 .PHONY: install.all
 install.all: install.docker install.lockgit install.certbot install.systemd-timesyncd \
-	install.base install.vim install.zsh
+	install.vim install.net-tools\
+	install.hostname install.zsh
