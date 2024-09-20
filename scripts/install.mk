@@ -39,7 +39,7 @@ install.snap: install.upgrade
 
 # ssh
 .PHONY: install.ssh
-install.ssh: open.config
+install.ssh: lockgit.open
 	cp -fp ./config/ssh/config/* ~/.ssh
 
 # warp

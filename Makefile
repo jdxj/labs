@@ -5,17 +5,22 @@ DOCKER := cd docker/infra && \
 		  docker compose -f docker-compose.yml -f sing-box.yml
 INSTALL_PATH := /usr/local/bin
 
-.PHONY: open.config
-open.config:
+# lockgit
+.PHONY: lockgit.open
+lockgit.open:
 	git pull
 	lockgit open -f
 
-.PHONY: close.config
-close.config:
+.PHONY: lockgit.rm
+lockgit.rm:
+	@lockgit status | grep "unavailable" | awk '{print $1}' | xargs lockgit rm
+
+.PHONY: lockgit.close
+lockgit.close:
 	lockgit close
 
 .PHONY: up.nginx.%
-up.nginx.%: open.config merge.nginx.%
+up.nginx.%: lockgit.open merge.nginx.%
 	$(DOCKER) down my_nginx
 	docker image prune -af
 	rm -vf docker/infra/nginx/logs/*.log
@@ -23,7 +28,7 @@ up.nginx.%: open.config merge.nginx.%
 	$(DOCKER) up -d my_nginx
 
 .PHONY: up.sb.%
-up.sb.%: open.config merge.sb.%
+up.sb.%: lockgit.open merge.sb.%
 	rm -vf docker/infra/sing-box/log/*.log
 	$(DOCKER) up -d my_sing-box
 
@@ -40,7 +45,3 @@ up.mysql:
 .PHONY: down.%
 down.%:
 	$(DOCKER) down my_$*
-
-.PHONY: lockgit.rm
-lockgit.rm:
-	@lockgit status | grep "unavailable" | awk '{print $1}' | xargs lockgit rm

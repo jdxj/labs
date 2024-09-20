@@ -1,5 +1,5 @@
 .PHONY: merge.sb.%
-merge.sb.%: open.config
+merge.sb.%: lockgit.open
 	$(DOCKER) down my_sing-box
 	docker image prune -af
 	docker run --rm \
@@ -9,7 +9,7 @@ merge.sb.%: open.config
 		merge /tmp/sing-box/conf/config.json -C /tmp/sing-box/server -C /tmp/sing-box/server/$*
 
 .PHONY: merge.app.sb.%
-merge.app.sb.%: open.config
+merge.app.sb.%: lockgit.open
 	docker run --rm \
 		-v ./config/sing-box/client:/tmp/sing-box/client \
 		-v ./docker/infra/nginx/app:/tmp/sing-box/conf \
@@ -19,6 +19,6 @@ merge.app.sb.%: open.config
 
 merge.nginx.%: output := docker/infra/nginx/conf.d
 .PHONY: merge.nginx.%
-merge.nginx.%: open.config
+merge.nginx.%: lockgit.open
 	rm -vf $(output)/*.conf
 	cp -f config/nginx/$*_*.conf $(output)
