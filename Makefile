@@ -12,11 +12,11 @@ lockgit.open:
 	lockgit open -f
 
 .PHONY: lockgit.rm
-lockgit.rm:
+lockgit.rm: lockgit.open
 	@lockgit status | grep "unavailable" | awk '{print $1}' | xargs -r lockgit rm
 
 .PHONY: rm.lockgit
-rm.lockgit:
+rm.lockgit: lockgit.open
 	@lockgit status | grep "new file" | awk '{print $1}' | xargs -r rm -v
 
 .PHONY: lockgit.close
