@@ -136,6 +136,7 @@ install.hostname:
 
 # sysctl leaf required
 .PHONY: install.sysctl
+install.sysctl:
 	cp -f ./config/kernel/sysctl.conf /etc/sysctl.conf
 	sysctl -p
 
