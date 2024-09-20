@@ -25,6 +25,11 @@ install.git: install.upgrade
 install.ca: install.upgrade
 	apt install -y ca-certificates
 
+# gpg
+.PHONY: install.gpg
+install.gpg: install.upgrade
+	apt install -y gpg
+
 # snap
 .PHONY: install.snap
 install.snap: install.upgrade
@@ -36,6 +41,23 @@ install.snap: install.upgrade
 .PHONY: install.ssh
 install.ssh: open.config
 	cp -fp ./config/ssh/config/* ~/.ssh
+
+# warp
+.PHONY: install.warp
+install.warp: install.curl install.gpg
+	curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | \
+		gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
+	echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ bookworm main" | \
+		tee /etc/apt/sources.list.d/cloudflare-client.list
+	apt update && apt install -y cloudflare-warp
+	warp-cli registration new
+	warp-cli set-mode proxy
+	warp-cli connect
+
+# brutal
+.PHONY: install.brutal
+install.brutal: install.curl
+	bash -c "$$(curl -fsSL https://tcp.hy2.sh/)"
 
 # vim leaf
 .PHONY: install.vim
@@ -80,23 +102,6 @@ install.lockgit: install.wget
 install.certbot: install.snap
 	snap install --classic certbot
 	ln -sf /snap/bin/certbot /usr/bin/certbot
-
-# warp leaf?
-.PHONY: install.warp
-install.warp: install.curl
-	curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | \
-		gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
-	echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ bookworm main" | \
-		tee /etc/apt/sources.list.d/cloudflare-client.list
-	apt update && apt install -y cloudflare-warp
-	warp-cli registration new
-	warp-cli set-mode proxy
-	warp-cli connect
-
-# brutal leaf
-.PHONY: install.brutal
-install.brutal: install.curl
-	bash -c "$$(curl -fsSL https://tcp.hy2.sh/)"
 
 # timesyncd leaf required
 .PHONY: install.systemd-timesyncd
@@ -143,5 +148,5 @@ install.sysctl:
 # all
 .PHONY: install.all
 install.all: install.docker install.lockgit install.certbot install.systemd-timesyncd \
-	install.vim install.net-tools\
+	install.vim install.net-tools install.sysctl \
 	install.hostname install.zsh
