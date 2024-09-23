@@ -46,6 +46,12 @@ up.ethr:
 up.mysql:
 	$(DOCKER) up -d my_mysql
 
+.PHONY: up.st
+up.st:
+	$(DOCKER) down my_syncthing
+	docker image prune -af
+	$(DOCKER) up -d my_syncthing
+
 .PHONY: down.%
 down.%:
 	$(DOCKER) down my_$*
