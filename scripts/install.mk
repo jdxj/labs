@@ -41,6 +41,9 @@ install.snap: install.upgrade
 .PHONY: install.ssh
 install.ssh: lockgit.open
 	cp -fp ./config/ssh/config/* ~/.ssh
+	cat config/ssh/pc/id_ed25519.pub config/ssh/mbp/id_ed25519.pub \
+		config/ssh/config/id_ed25519.pub > ~/.ssh/authorized_keys
+	chmod 0600 ~/.ssh/authorized_keys
 
 # warp
 .PHONY: install.warp
