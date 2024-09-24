@@ -68,6 +68,6 @@ uyRWUJGKw5M6FxA1ko2J8Hs37f3ijUZw	config/sshd/env.conf
 Hm3Kzi_WjCqVxeTsJY3YncBP24yLsI93	docker/infra/.env
 PbUFkQIhpi4MNCfZrpW4tHQvcFNZnlq3	docker/infra/maddy/maddy.conf
 -MI2ipOsA17V8s06nlR4YMdq1wuhQqfh	docker/infra/nginx/conf.d/htpasswd
-Ve6IdtxCYSHu4OZx1v0_P9VFfWvM82mt	docker/infra/sing-box.yml
+5CUj2A2TrTb-CRw-ctQFs2L-etrJjn1p	docker/infra/sing-box.yml
 HXnw7WKUWHX6nN_84kkrvZzYezsyfTIa	recovery/github-recovery-codes.txt
 TIi3A4BMkWXIX7jyrbmdFxUXFX3Rnfu_	resume/resume.json
