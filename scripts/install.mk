@@ -64,7 +64,7 @@ install.brutal: install.curl
 
 # vim leaf
 .PHONY: install.vim
-install.vim: install.upgrade
+install.vim: install.upgrade git.pull
 	apt install -y vim
 	cp -f config/vim/.vimrc ~
 

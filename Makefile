@@ -5,10 +5,14 @@ DOCKER := cd docker/infra && \
 		  docker compose -f docker-compose.yml -f sing-box.yml
 INSTALL_PATH := /usr/local/bin
 
+# git
+.PHONY: git.pull
+git.pull:
+	git pull
+
 # lockgit
 .PHONY: lockgit.open
-lockgit.open:
-	git pull
+lockgit.open: git.pull
 	lockgit open -f
 
 .PHONY: lockgit.rm
