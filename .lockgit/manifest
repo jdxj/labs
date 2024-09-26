@@ -22,13 +22,17 @@ LXbWNFvJELokze4kxUu8fyTAr8iHvpw7	config/sing-box/client/05_route.json
 6nILb69NrznU1aQadqwX3_JxWtj-rS06	config/sing-box/client/06_experimental.json
 jtga2AP-xaAFzhbZ2Iwz5Wx0JEz64d-j	config/sing-box/client/android/01_log.json
 0DVAXSBPUsglzBENJDYiJg1a9sshUFlH	config/sing-box/client/android/02_dns.json
+UUimxOKkef3Tw4_rcybp3P3aXD71da-k	config/sing-box/client/android/04_outbounds.json
 nOfsBE2Cv5r8nqQyKl9fmk5j5YtLTT2_	config/sing-box/client/android/05_route.json
 5fQw6ahxN84PxgYFSgB6Jk5COjzitDOm	config/sing-box/client/fixed/01_log.json
 g_UKFfnbM00UgRdLz_TQr35f8k9XMtpi	config/sing-box/client/fixed/02_dns.json
 TmLnv7ucOYcKQm5uv9cAcvNskWyZLUD6	config/sing-box/client/fixed/05_route.json
 UmyWqa1FfIGNYti8XFl81tdUparEDSUH	config/sing-box/client/ios/02_dns.json
 VNA5glswIH3uRKsJXHq8KICNQy2wEtnm	config/sing-box/client/ios/05_route.json
-Y-D9lXrk9zMD4SUHI9iawrloe8F4sxu_	config/sing-box/client/outbounds/01_erln.json
+TnqRf1xMemwE78XwEXkllkti2HfKWD-u	config/sing-box/client/k20p/01_log.json
+kYJY6g8BcA3vdU19cX5fQO1Zgl-6cxtx	config/sing-box/client/k20p/02_dns.json
+dxqEdt7uqIrvkqkWFS3WuGC0BbrX8620	config/sing-box/client/k20p/04_outbounds.json
+PTg3XXjpl9FlwXnhvhg635rwnUIl4FUO	config/sing-box/client/k20p/05_route.json
 Ns2pnJTsj-JKihV-ZGwCrQPI-soysN02	config/sing-box/client/outbounds/02_daisy.json
 -rJV2YXpj1R3t5DF9FV88_OYP43emHZv	config/sing-box/client/outbounds/03_tina.json
 Y-XZCsKu7dDRlaxPb1b64qiL80KojZuQ	config/sing-box/client/outbounds/04_ella.json
@@ -37,7 +41,7 @@ tIVP0DxTIBZBRLTkGuGLITAUB9xtQlqh	config/sing-box/client/outbounds/05_bert.json
 T0qWdWutZfA51kILuTZYr8RsuNEShhAA	config/sing-box/client/outbounds/11_selector.json
 6DMpwmkJJKHy6J7swgxll9PwcXUFChSt	config/sing-box/server/01_log.json
 ClxNDW9egDVXQF4r25QaftAoyheKAmZg	config/sing-box/server/02_dns.json
-46qx3nNbfl_0PJh0j9YYfYCnWnGqku9-	config/sing-box/server/03_inbounds.json
+IJ1fSQbczduJOfkRZEkacVX3yDS0cw1N	config/sing-box/server/03_inbounds.json
 Dn7oCBrFqygjMumLdth3oZOVuRoeys2J	config/sing-box/server/04_outbounds.json
 1IEglfNIHImO8l09zujxRX-QUg67s-vs	config/sing-box/server/05_route.json
 2msCgdLWz4zgZICd5LP8uIYN0myczCuW	config/sing-box/server/bert/03_inbounds.json

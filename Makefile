@@ -16,7 +16,7 @@ lockgit.open: git.pull
 	lockgit open -f
 
 .PHONY: lockgit.rm
-lockgit.rm: lockgit.open
+lockgit.rm:
 	@lockgit status | grep "unavailable" | awk '{print $$1}' | xargs -r lockgit rm
 
 .PHONY: rm.lockgit
