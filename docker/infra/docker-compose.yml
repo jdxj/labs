@@ -10,6 +10,8 @@ volumes:
     name: syncthing
   sing-box:
     name: sing-box
+  mysql:
+    name: mysql
 
 services:
   my_mysql:
@@ -26,8 +28,8 @@ services:
         source: ${MYSQL_CONF_PATH}
         target: /etc/mysql/conf.d
         read_only: true
-      - type: bind
-        source: ${MYSQL_DATA_PATH}
+      - type: volume
+        source: mysql
         target: /var/lib/mysql
         read_only: false
   my_redis:

@@ -21,8 +21,6 @@
 *.session
 *.zip
 
-docker/infra/mysql/data/*
-!docker/infra/mysql/data/.keep
 docker/infra/qbittorrent-nox/config/*
 !docker/infra/qbittorrent-nox/config/.keep
 docker/infra/linkding/*
