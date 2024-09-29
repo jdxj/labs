@@ -37,7 +37,7 @@ up.nginx.%: lockgit.open merge.nginx.%
 
 .PHONY: up.sb.%
 up.sb.%: lockgit.open merge.sb.%
-	rm -vf docker/infra/sing-box/log/*.log
+	rm -vf /var/lib/docker/volumes/sing-box/_data/sing-box.log
 	$(DOCKER) up -d my_sing-box
 
 .PHONY: up.ethr
