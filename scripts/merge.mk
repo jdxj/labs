@@ -3,10 +3,10 @@ merge.sb.%: lockgit.open
 	$(DOCKER) down my_sing-box
 	docker image prune -af
 	docker run --rm \
-		-v ./config/sing-box/server:/tmp/sing-box/server \
-		-v ./docker/infra/sing-box/conf:/tmp/sing-box/conf \
+		-v ./config/sing-box/server:/tmp/server \
+		-v sing-box:/tmp/sing-box \
 		ghcr.io/sagernet/sing-box \
-		merge /tmp/sing-box/conf/config.json -C /tmp/sing-box/server -C /tmp/sing-box/server/$*
+		merge /tmp/sing-box/conf/config.json -C /tmp/server -C /tmp/server/$*
 
 .PHONY: merge.app.sb.%
 merge.app.sb.%: lockgit.open
