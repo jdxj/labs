@@ -56,6 +56,12 @@ up.st:
 	docker image prune -af
 	$(DOCKER) up -d my_syncthing
 
+.PHONY: up.qbt
+up.qbt:
+	$(DOCKER) down my_qbittorrent-nox
+	docker image prune -af
+	$(DOCKER) up -d my_qbittorrent-nox
+
 .PHONY: down.%
 down.%:
 	$(DOCKER) down my_$*
