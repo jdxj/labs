@@ -144,7 +144,8 @@ install.hostname:
 
 # sysctl leaf required
 .PHONY: install.sysctl
-install.sysctl:
+install.sysctl: install.upgrade
+	apt install -y procps
 	cp -f ./config/kernel/sysctl.conf /etc/sysctl.conf
 	sysctl -p
 
