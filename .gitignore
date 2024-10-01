@@ -21,8 +21,6 @@
 *.session
 *.zip
 
-docker/infra/qbittorrent-nox/config/*
-!docker/infra/qbittorrent-nox/config/.keep
 docker/infra/linkding/*
 !docker/infra/linkding/.keep
 docker/infra/fusion/*

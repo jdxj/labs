@@ -12,6 +12,8 @@ volumes:
     name: sing-box
   mysql:
     name: mysql
+  qbittorrent-nox:
+    name: qbittorrent-nox
 
 services:
   my_mysql:
@@ -114,31 +116,26 @@ services:
       - syncthing:/var/syncthing
   my_qbittorrent-nox:
     environment:
-      - QBT_EULA=${QBT_EULA}
-      - QBT_VERSION=${QBT_VERSION}
-      - QBT_WEBUI_PORT=${QBT_WEBUI_PORT}
+      - QBT_LEGAL_NOTICE=confirm
+      - QBT_VERSION=latest
+      - QBT_WEBUI_PORT=8080
       - TZ=Asia/Shanghai
-    image: qbittorrentofficial/qbittorrent-nox:${QBT_VERSION}
-    ports:
-      - 16881:16881/tcp
-      - 16881:16881/udp
+    image: qbittorrentofficial/qbittorrent-nox:latest
+    network_mode: host
     read_only: true
     stop_grace_period: 30m
     tmpfs:
       - /tmp
     tty: true
     volumes:
-      - type: bind
-        source: ${QBT_CONFIG_PATH}
+      - type: volume
+        source: qbittorrent-nox
         target: /config
         read_only: false
       - type: bind
         source: ${NGINX_STATIC_PATH}
         target: /downloads
         read_only: false
-    networks:
-      my_net:
-        ipv4_address: ${QBITTORRENT_NOX_IP}
     restart: unless-stopped
   my_linkding:
     image: sissbruecker/linkding:latest
