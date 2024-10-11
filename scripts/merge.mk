@@ -13,7 +13,7 @@ merge.app.sb.%: lockgit.open
 	docker run --rm \
 		-v ./config/sing-box/client:/tmp/sing-box/client \
 		-v ./docker/infra/nginx/app:/tmp/sing-box/conf \
-		ghcr.io/sagernet/sing-box \
+		ghcr.io/sagernet/sing-box:latest-beta \
 		merge /tmp/sing-box/conf/sing-box-$*.json \
 			-C /tmp/sing-box/client -C /tmp/sing-box/client/outbounds -C /tmp/sing-box/client/$*
 
