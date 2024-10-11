@@ -16,7 +16,7 @@ VLYRsXp8ume-7MBZymW_uo9k-wUPlQ7S	config/nginx/daisy_app.conf
 s9ge11HbsZN0eiWiHhFMPL4mcYCz7bu0	config/rss/feeds.opml
 8g0ih8N-q4YbAOvV7Jvsc3-_wCT9-ATp	config/sing-box/client/01_log.json
 5iMjHxxZzPGHPeimOs4qncxxLjhyimey	config/sing-box/client/02_dns.json
-pqw6CmGTR3M6Fb4JxpBqrnKqww3kNX3F	config/sing-box/client/03_inbounds.json
+af04ZYhhtabEnQHOUX3qSyGp7s0uKeaR	config/sing-box/client/03_inbounds.json
 Jst0z9GvGKkcxdaAkiDEuKJyncxva8ap	config/sing-box/client/04_outbounds.json
 JXdvn5f3tKOdpmhQBdTpuiDfbWQduwU5	config/sing-box/client/05_route.json
 6nILb69NrznU1aQadqwX3_JxWtj-rS06	config/sing-box/client/06_experimental.json
