@@ -34,7 +34,6 @@ kYJY6g8BcA3vdU19cX5fQO1Zgl-6cxtx	config/sing-box/client/k20p/02_dns.json
 dxqEdt7uqIrvkqkWFS3WuGC0BbrX8620	config/sing-box/client/k20p/04_outbounds.json
 PTg3XXjpl9FlwXnhvhg635rwnUIl4FUO	config/sing-box/client/k20p/05_route.json
 Ns2pnJTsj-JKihV-ZGwCrQPI-soysN02	config/sing-box/client/outbounds/02_daisy.json
--rJV2YXpj1R3t5DF9FV88_OYP43emHZv	config/sing-box/client/outbounds/03_tina.json
 Y-XZCsKu7dDRlaxPb1b64qiL80KojZuQ	config/sing-box/client/outbounds/04_ella.json
 tIVP0DxTIBZBRLTkGuGLITAUB9xtQlqh	config/sing-box/client/outbounds/05_bert.json
 5RrZuPtfiJvlLg8LtgjTG4WOi8fxQfbG	config/sing-box/client/outbounds/10_outbounds.json
@@ -56,9 +55,6 @@ UpNJDHI_6-vK1z4ECUqm7PStsSsajiNi	config/sing-box/server/erln/02_dns.json
 2ihkIj7QnwUCvjB8CStv2nw3HkiUB3xM	config/sing-box/server/erln/04_outbounds.json
 gKQdLW_daWWD9uI-lNnO5gj79LEWQHxJ	config/sing-box/server/erln/05_route.json
 nHCQ8efugacSUyWCiVl0-r9vOrjxyCMj	config/sing-box/server/erln/06_experimental.json
-hgFgZ-Y2_sr6yl_1F5iW5hM62O_-ey44	config/sing-box/server/tina/03_inbounds.json
-k5d6ufCqz6V5ycB15RihQxzW-FqYlJfV	config/sing-box/server/tina/04_outbounds.json
-mNKsjkckp6ECyQh-TbpruRrFOdRpkSHI	config/sing-box/server/tina/05_route.json
 8FHLP72OXOx2if1Ny_adZhQ4EslHEEgU	config/ssh/config/config
 ixfOXrSKJZkBHa5u7GbcXIMg9Em4J-CB	config/ssh/config/id_ed25519
 Tm4mOWaaFNKpriFoD6Pqg5o7eFpJJ3JE	config/ssh/config/id_ed25519.pub
