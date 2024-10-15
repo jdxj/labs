@@ -65,7 +65,7 @@ AR6oNLzdlOjeW3gYWcZbtqwBzCtqn5nP	config/ssh/mbp/id_ed25519
 JjdnSxD2U6ZfzheKjEu93EYFp2tHnuFR	config/ssh/pc/id_ed25519
 6Z8ZweT_HvHON_T5dkGppA8GFqfERVDK	config/ssh/pc/id_ed25519.pub
 uyRWUJGKw5M6FxA1ko2J8Hs37f3ijUZw	config/sshd/env.conf
-1tU6dgOa5Bm3gZCEh0yya0PzN2DG_phC	docker/infra/.env
+HEzUZ09muLuJNyYxnXxGVaLGUw_p_adc	docker/infra/.env
 PbUFkQIhpi4MNCfZrpW4tHQvcFNZnlq3	docker/infra/maddy/maddy.conf
 -MI2ipOsA17V8s06nlR4YMdq1wuhQqfh	docker/infra/nginx/conf.d/htpasswd
 gwNsxDOhjT1CdDDNzA9DoN3HZHhmvDB6	docker/infra/sing-box.yml
