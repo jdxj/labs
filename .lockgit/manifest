@@ -15,15 +15,15 @@ VLYRsXp8ume-7MBZymW_uo9k-wUPlQ7S	config/nginx/daisy_app.conf
 4LJ4gP1IwmjQ1H5jn4qd9zKO6Om2IVDt	config/nginx/ella_204.conf
 s9ge11HbsZN0eiWiHhFMPL4mcYCz7bu0	config/rss/feeds.opml
 8g0ih8N-q4YbAOvV7Jvsc3-_wCT9-ATp	config/sing-box/client/01_log.json
-QDcFqAh64wqgKPC7LF1mH5sJUwAXNNck	config/sing-box/client/02_dns.json
-BcpvycmRRt7cof4UXYAw8z8VHHKxqLW6	config/sing-box/client/03_inbounds.json
+NTYCIwQd0Jll22jbzW0_9NmLOGo8e6Up	config/sing-box/client/02_dns.json
+1i8dUacafs84t8sQqPMxbR5CjU2ti2uG	config/sing-box/client/03_inbounds.json
 Jst0z9GvGKkcxdaAkiDEuKJyncxva8ap	config/sing-box/client/04_outbounds.json
 WfKiQTMAQb-nDZpmy67JdY7csNLqASzv	config/sing-box/client/05_route.json
 6nILb69NrznU1aQadqwX3_JxWtj-rS06	config/sing-box/client/06_experimental.json
 jtga2AP-xaAFzhbZ2Iwz5Wx0JEz64d-j	config/sing-box/client/android/01_log.json
 0DVAXSBPUsglzBENJDYiJg1a9sshUFlH	config/sing-box/client/android/02_dns.json
 UUimxOKkef3Tw4_rcybp3P3aXD71da-k	config/sing-box/client/android/04_outbounds.json
-t0wcCcNY3hXk27vQIE8x_AqK5yxUpuLi	config/sing-box/client/android/05_route.json
+t5MYF7Q__w-EkUn2fIp7vcjxh2hKa_Mm	config/sing-box/client/android/05_route.json
 5fQw6ahxN84PxgYFSgB6Jk5COjzitDOm	config/sing-box/client/fixed/01_log.json
 g_UKFfnbM00UgRdLz_TQr35f8k9XMtpi	config/sing-box/client/fixed/02_dns.json
 vF5PwQetoFJdw091DIXEHdMu7oj5N2oF	config/sing-box/client/fixed/05_route.json
@@ -32,7 +32,7 @@ VNA5glswIH3uRKsJXHq8KICNQy2wEtnm	config/sing-box/client/ios/05_route.json
 TnqRf1xMemwE78XwEXkllkti2HfKWD-u	config/sing-box/client/k20p/01_log.json
 kYJY6g8BcA3vdU19cX5fQO1Zgl-6cxtx	config/sing-box/client/k20p/02_dns.json
 -tkD8qIf7syDDwnSR8SNk85riDRiJmm9	config/sing-box/client/k20p/04_outbounds.json
-Ko5aupVj-N7i4oXwrfNKfXl7Y_NZS4ae	config/sing-box/client/k20p/05_route.json
+bw7OupP30FzoCry78suBiSzWJoTQwp-t	config/sing-box/client/k20p/05_route.json
 Ns2pnJTsj-JKihV-ZGwCrQPI-soysN02	config/sing-box/client/outbounds/02_daisy.json
 Y-XZCsKu7dDRlaxPb1b64qiL80KojZuQ	config/sing-box/client/outbounds/04_ella.json
 tIVP0DxTIBZBRLTkGuGLITAUB9xtQlqh	config/sing-box/client/outbounds/05_bert.json
