@@ -33,3 +33,5 @@ set wildmode=longest:list,full
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+" 粘贴模式，避免格式错乱
+set paste
