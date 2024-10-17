@@ -14,6 +14,7 @@ git.pull:
 .PHONY: lockgit.open
 lockgit.open: git.pull
 	lockgit open -f
+	@lockgit status | grep "new file" | awk '{print $$1}' | xargs -r rm -v
 
 .PHONY: lockgit.rm
 lockgit.rm:
