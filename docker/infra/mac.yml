@@ -21,3 +21,6 @@ services:
   my_vanblog:
     ports:
       - 8083:80
+  my_filecodebox:
+    ports:
+      - 12345:12345

@@ -14,6 +14,8 @@ volumes:
     name: mysql
   qbittorrent-nox:
     name: qbittorrent-nox
+  filecodebox:
+    name: filecodebox
 
 services:
   my_mysql:
@@ -213,3 +215,14 @@ services:
     restart: unless-stopped
     network_mode: host
     command: [ "ethr","-s", "-no" ]
+  my_filecodebox:
+    image: lanol/filecodebox:beta
+    restart: unless-stopped
+    networks:
+      my_net:
+        ipv4_address: ${FILECODEBOX_IP}
+    volumes:
+      - type: volume
+        source: filecodebox
+        target: /app/data
+        read_only: false

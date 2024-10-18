@@ -13,6 +13,7 @@ ztMSLCOk6LeXP0ZdUJcADBHgQrpJnbAx	config/nginx/bert_sync.conf
 E_JjLxU6djgWusyUTpJhqz4bHdgeA4J3	config/nginx/betty_debug.conf
 VLYRsXp8ume-7MBZymW_uo9k-wUPlQ7S	config/nginx/daisy_app.conf
 4LJ4gP1IwmjQ1H5jn4qd9zKO6Om2IVDt	config/nginx/ella_204.conf
+fjnL3Dx1TGXDN8Q207xwMVAdPxkoUWGj	config/nginx/ella_filecodebox.conf
 s9ge11HbsZN0eiWiHhFMPL4mcYCz7bu0	config/rss/feeds.opml
 8g0ih8N-q4YbAOvV7Jvsc3-_wCT9-ATp	config/sing-box/client/01_log.json
 NTYCIwQd0Jll22jbzW0_9NmLOGo8e6Up	config/sing-box/client/02_dns.json
@@ -64,7 +65,7 @@ AR6oNLzdlOjeW3gYWcZbtqwBzCtqn5nP	config/ssh/mbp/id_ed25519
 JjdnSxD2U6ZfzheKjEu93EYFp2tHnuFR	config/ssh/pc/id_ed25519
 6Z8ZweT_HvHON_T5dkGppA8GFqfERVDK	config/ssh/pc/id_ed25519.pub
 uyRWUJGKw5M6FxA1ko2J8Hs37f3ijUZw	config/sshd/env.conf
-HEzUZ09muLuJNyYxnXxGVaLGUw_p_adc	docker/infra/.env
+1dK0B2CvEbdtsWyvVoP-BHxCXxnpmRWG	docker/infra/.env
 PbUFkQIhpi4MNCfZrpW4tHQvcFNZnlq3	docker/infra/maddy/maddy.conf
 -MI2ipOsA17V8s06nlR4YMdq1wuhQqfh	docker/infra/nginx/conf.d/htpasswd
 gwNsxDOhjT1CdDDNzA9DoN3HZHhmvDB6	docker/infra/sing-box.yml
