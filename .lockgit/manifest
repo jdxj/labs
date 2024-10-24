@@ -28,8 +28,10 @@ UzAO95CxuNuqrc3yeHMS1EzX9rUVGUyg	config/sing-box/client/android/05_route.json
 5fQw6ahxN84PxgYFSgB6Jk5COjzitDOm	config/sing-box/client/fixed/01_log.json
 g_UKFfnbM00UgRdLz_TQr35f8k9XMtpi	config/sing-box/client/fixed/02_dns.json
 ZeNV0TVkMvnje42ZGA6wTEI5QSMcNi-C	config/sing-box/client/fixed/05_route.json
+lb9Hq_lS30d3vkR3rb2Ko6gwyGeIk4Xn	config/sing-box/client/ios/01_log.json
 UmyWqa1FfIGNYti8XFl81tdUparEDSUH	config/sing-box/client/ios/02_dns.json
-VNA5glswIH3uRKsJXHq8KICNQy2wEtnm	config/sing-box/client/ios/05_route.json
+vqn_iOiGJUjqeQArk0tCMsJxkkWLpwPw	config/sing-box/client/ios/04_outbounds.json
+u2Ke7Oqqf4nRWKmyOITK8xGVT89nEQWe	config/sing-box/client/ios/05_route.json
 TnqRf1xMemwE78XwEXkllkti2HfKWD-u	config/sing-box/client/k20p/01_log.json
 kYJY6g8BcA3vdU19cX5fQO1Zgl-6cxtx	config/sing-box/client/k20p/02_dns.json
 -tkD8qIf7syDDwnSR8SNk85riDRiJmm9	config/sing-box/client/k20p/04_outbounds.json
@@ -40,7 +42,7 @@ tIVP0DxTIBZBRLTkGuGLITAUB9xtQlqh	config/sing-box/client/outbounds/05_bert.json
 5RrZuPtfiJvlLg8LtgjTG4WOi8fxQfbG	config/sing-box/client/outbounds/10_outbounds.json
 AZQBqqPeQEofRzcSwFSOrm0X7xXgSeO_	config/sing-box/server/01_log.json
 ClxNDW9egDVXQF4r25QaftAoyheKAmZg	config/sing-box/server/02_dns.json
-MFhFq_H9KOX7caJ63voNJCvv6-3eDo-f	config/sing-box/server/03_inbounds.json
+qQFp2pGzF0MGr-KX_IcfXhi8BKHf6ZDP	config/sing-box/server/03_inbounds.json
 eRdnwBaMIbUqBgO4imkQPKoan1wuTtJU	config/sing-box/server/04_outbounds.json
 eThZBhGJjWWakv1XvnCFpL0BZqRBlnKJ	config/sing-box/server/05_route.json
 u4yAvhdaxEpPkDSciOLuRsvlVL_1K4Ke	config/sing-box/server/bert/03_inbounds.json
